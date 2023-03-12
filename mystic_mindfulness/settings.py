@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'mystic_mindfulness',
     'home',
+    'site_admin',
 ]
 
 MIDDLEWARE = [
