@@ -45,12 +45,6 @@
         
         <header class="container-fluid fixed-top"></header>
 
-        {% if messages %}
-            <div class="message-container"></div>
-        {% endif %}
-
-        {% block page_header %}
-
         <!-- Navigation -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -76,17 +70,23 @@
                     <div class="row ms-auto">
                         <div class="d-flex my-2 my-lg-0">
                             <div class="col">
-                                <a href="#" class="btn btn-outline-light" aria-label="Login">Login</a>
+                                <a href="#" class="btn btn-outline-light" aria-label="Login">REGISTER</a>
                             </div>
                             <div class="col">
-                                <a href="#" class="btn btn-outline-light" aria-label="Register an account">Register</a>
+                                <a href="#" class="btn btn-outline-light" aria-label="Register an account">SIGN IN</a>
                             </div>
                        </div>
                     </div>
                 </div>
             </div>
         </nav>
+        <br><br><br>
 
+        {% if messages %}
+            <div class="message-container"></div>
+        {% endif %}
+
+        {% block page_header %}
         {% endblock %}
 
         {% block content %}
