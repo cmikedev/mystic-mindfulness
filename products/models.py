@@ -20,6 +20,7 @@ class Category(models.Model):
 
     class Meta:
         ordering = ('name',)
+        verbose_name_plural = 'Categories'
     
     def __str__(self):
         return self.name
@@ -29,8 +30,8 @@ class Product(models.Model):
     category = models.ForeignKey(
         'Category',
         related_name='products',
-        null=TRUE,
-        blank=TRUE,
+        null=True,
+        blank=True,
         on_delete=models.SET_NULL)
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255)
