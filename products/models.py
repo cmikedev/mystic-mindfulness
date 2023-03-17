@@ -23,3 +23,24 @@ class Category(models.Model):
     
     def __str__(self):
         return self.name
+
+
+class Product(models.Model):
+    category = models.ForeignKey(
+        'Category',
+        related_name='products',
+        null=TRUE,
+        blank=TRUE,
+        on_delete=models.SET_NULL)
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255)
+    image = CloudinaryField('image')
+    description = models.TextField(max_length=1000)
+    price = models.FloatField()
+
+    class Meta:
+        ordering = ['name', ]
+
+    def __str__(self):
+        return self.name
+
