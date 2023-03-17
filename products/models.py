@@ -14,3 +14,12 @@ class Photo(models.Model):
         return self.title
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255)
+
+    class Meta:
+        ordering = ('name',)
+    
+    def __str__(self):
+        return self.name
