@@ -53,7 +53,28 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 
+"""def product_detail(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    context = {'product': product}
+    return render(request, 'products/product_detail.html', context)"""
+
+
 def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == 'POST':
+        rating = request.POST.get('rating', 3)
+        content = request.POST.get('content', '')
+
+        if content:
+            review = Review.objects.create(
+                product=product,
+                rating=rating,
+                content=content,
+                created_by=request.user
+            )
+
+            return redirect('product', pk=product_id)
+
     context = {'product': product}
     return render(request, 'products/product_detail.html', context)
