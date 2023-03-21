@@ -4,7 +4,6 @@ from django.db.models import Q
 from django.views import generic
 from django.urls import reverse_lazy
 from .models import *
-from .forms import *
 
 
 def all_products(request):
