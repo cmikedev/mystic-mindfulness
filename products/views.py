@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.views import generic
+from django.urls import reverse_lazy
 from .models import *
+from .forms import *
 
 
 def all_products(request):
@@ -53,28 +56,38 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 
-"""def product_detail(request, product_id):
-    product = get_object_or_404(Product, pk=product_id)
-    context = {'product': product}
-    return render(request, 'products/product_detail.html', context)"""
-
-
 def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
 
     if request.method == 'POST':
-        rating = request.POST.get('rating', 3)
-        content = request.POST.get('content', '')
+        rating = request.POST.get('rating', 0)
+        comment = request.POST.get('comment', '')
 
-        if content:
-            review = Review.objects.create(
-                product=product,
-                rating=rating,
-                content=content,
-                created_by=request.user
+        if comment:
+            reviews = Review.objects.filter(
+                created_by=request.user,
+                product=product
             )
 
-            return redirect('product', pk=product_id)
+            if reviews.count() > 0:
+                review = reviews.first()
+                review.rating = rating
+                review.comment = comment
+                review.save()
+            else:
+                review = Review.objects.create(
+                    product=product,
+                    rating=rating,
+                    comment=comment,
+                    created_by=request.user
+                )
 
-    context = {'product': product}
+            return redirect('product_detail', product_id)
+
+    context = {
+        'product': product,
+        }
+        
     return render(request, 'products/product_detail.html', context)
+
+

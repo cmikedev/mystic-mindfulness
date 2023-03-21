@@ -45,6 +45,20 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'slug': self.slug, 'pk': self.pk})
+    
+    def get_rating(self):
+        reviews_total = 0
+
+        for review in self.reviews.all():
+            reviews_total += review.rating
+
+        if reviews_total >0 :
+            return reviews_total / self.reviews.count()
+        
+        return 0
 
 
 class Review(models.Model):
@@ -53,7 +67,7 @@ class Review(models.Model):
         related_name='reviews',
         on_delete=models.CASCADE
         )
-    rating = models.IntegerField(default=0)
+    rating = models.IntegerField(default=3)
     comment = models.TextField()
     created_by = models.ForeignKey(
         User,

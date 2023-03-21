@@ -37,8 +37,11 @@
                         </a>
                     </p>
                 {% endif %}
-                {% if product.rating %}
-                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+
+                <!--<p class="mt-1 text-gray-400">Rating: {{ product.get_rating }}</p>-->
+
+                {% if product.get_rating %}
+                    <small class="text-muted"><i class="fas fa-star mr-1"></i> {{ product.get_rating }} / 5</small>
                 {% else %}
                     <small class="text-muted">No Rating</small>
                 {% endif %}
@@ -51,9 +54,8 @@
         <h2>Reviews</h2>
 
         {% if request.user.is_authenticated %}
-            <form method="post" action="." class="box-style bg-secondary rounded">
+            <form method="POST" action="" enctype="multipart/form-data" class="box-style bg-secondary rounded">
                 {% csrf_token %}
-
                 <div>
                     <label>Rating</label>
                     <select name="rating">
@@ -67,12 +69,25 @@
 
                 <div>
                     <label>Comment</label><br>
-                    <textarea name="content"></textarea>
+                    <textarea name="comment"></textarea>
                 </div>
-                <button>Submit</button>
+                <!--<button>Submit</button>-->
+                <input type="submit" value="Submit" class="btn btn-light btn-sm">
 
             </form>
         {% endif %}
+        
+        <br>
+    
+        {% for review in product.reviews.all %}
+            <div class="box-style px-4 py-6 bg-light rounded-xl mb-4">
+                <strong>Rating: </strong>{{ review.rating }}/5<br>
+                <strong>Date: </strong>{{ review.created_at|date:"Y-m-d" }}<br>
+                <strong>Comment: </strong><br>
+                {{ review.comment }}
+            </div>
+        {% endfor %}
+
         <br>
     </div>
 

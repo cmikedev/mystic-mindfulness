@@ -3,6 +3,7 @@ from .models import *
 
 
 admin.site.register(Photo)
+admin.site.register(Review)
 
 
 @admin.register(Category)
