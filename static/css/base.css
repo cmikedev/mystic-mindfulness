@@ -1,9 +1,21 @@
-.box-style{
+.box-style {
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
 	background-color: #fff;
 	border-radius: 4px;
 	padding: 10px;
 }
+
+.box-style-opaque {
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+    background-color: #fff;
+	border-radius: 4px;
+	padding: 40px;
+    opacity: 0.4;
+    position: absolute;
+}
+
+
+/* All code below is from Boutique Ado */
 
 html {
     height: 100%;

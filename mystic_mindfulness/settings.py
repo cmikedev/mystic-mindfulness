@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'mystic_mindfulness',
     'home',
     'products',
+    'bag',
 ]
 
 MIDDLEWARE = [
