@@ -38,7 +38,7 @@ class Product(models.Model):
     slug = models.SlugField(max_length=255)
     image = CloudinaryField('image')
     description = models.TextField(max_length=1000)
-    price = models.FloatField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
 
     class Meta:
         ordering = ['name', ]
