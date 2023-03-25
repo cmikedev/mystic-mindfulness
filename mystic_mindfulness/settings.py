@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mystic_mindfulness.urls'
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 TEMPLATES = [
