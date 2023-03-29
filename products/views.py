@@ -5,7 +5,7 @@ from django.db.models.functions import Lower
 from django.views import generic
 from django.urls import reverse_lazy
 from .models import *
-
+from .forms import ProductForm
 
 def all_products(request):
 
@@ -57,6 +57,10 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
+    """
+    Display product details and allow registered user to leave review
+    and comment.
+    """
     product = get_object_or_404(Product, pk=product_id)
 
     if request.method == 'POST':
@@ -91,3 +95,12 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
