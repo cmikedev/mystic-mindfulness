@@ -39,7 +39,9 @@ class Product(models.Model):
         on_delete=models.SET_NULL)
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255)
-    image = CloudinaryField('image')
+    # image = CloudinaryField('image')
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     description = models.TextField(max_length=1000)
     price = models.DecimalField(max_digits=6, decimal_places=2)
 
