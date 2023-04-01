@@ -1,5 +1,5 @@
 from django.db import models
-from cloudinary.models import CloudinaryField
+#from cloudinary.models import CloudinaryField
 from django.contrib.auth.models import User
 
 
@@ -9,7 +9,7 @@ class Photo(models.Model):
     photos to Cloudinary
     """
     title = models.CharField(max_length=100)
-    image = CloudinaryField('image')
+    image = models.ImageField('image')
 
     def __str__(self):
         return self.title
