@@ -1,3 +1,35 @@
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+
+#front-image {
+    background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+}
+
 .box-style {
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
 	background-color: #fff;
@@ -70,6 +102,7 @@ body {
     color: white !important;
 }
 
+/*
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -79,6 +112,7 @@ body {
     background: #222;
     color: white;
 }
+*/
 
 .text-black {
     color: #000 !important;
