@@ -47,4 +47,11 @@
             <small>Shop with confidence!</small>
         </div>
     </div>
+
+    <div class="row">
+        <h1>TEST</h1>
+        {% for quote in quotes %}
+            <p>"{{ quote.body }}" ~ {{ quote.author }}</p>
+        {% endfor %}
+    </div>
 {% endblock %}
