@@ -128,7 +128,7 @@
                 <div class="col bg-black text-white">
                     <!--<h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>--> 
                     {% for quote in quotes %}
-                        <h5 class="my-1">"{{ quote.body }}" ~ <em>{{ quote.author }}</em></h5>
+                        <h5 class="my-1">"{{ quote.body }}" ~ <em><small>{{ quote.author }}</small></em></h5>
                     {% endfor %}              
                 </div>            
             </div>
