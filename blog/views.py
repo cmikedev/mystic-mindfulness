@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
+from django.views import generic
 from .models import *
 from .forms import PostForm
 from django.contrib import messages
@@ -55,4 +56,3 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'blog/delete_post.html'
     success_url = reverse_lazy('blog')
-    success_message = 'Post has successfully been deleted.'
