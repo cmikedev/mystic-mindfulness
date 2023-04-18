@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    {% if user.is_superuser %}
+        <div class="box-element" style="text-align: center; padding: 40px;">
+            <h1>Delete Post</h1>
+            <br>
+            <h4>Delete: {{ post.title }}?</h4>
+            <br>
+            <strong>Warning - this action cannot be undone</strong>
+            <br><br>
+            <form action="#" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="submit" value="Delete" class="btn btn-danger btn-sm mt-1 mb-1">
+            </form>
+        </div>
+        <br><br><br>
+    {% else %}
+        <br>
+        <h1>Oops...</h1>
+        <br>
+        <p>You are not authorised to view this page. If you think that you are seeing this
+            message in error please contact the site Administrator.
+        </p>
+        <br>
+        <a class="btn btn-outline-secondary" href="{% url 'blog' %}" aria-label="Return to Blog">Back</a>
+    {% endif %}
+{% endblock %}

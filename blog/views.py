@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.views.generic import ListView, DetailView, UpdateView
+from django.views.generic import ListView, DetailView, UpdateView, DeleteView
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse_lazy
 from .models import *
 from .forms import PostForm
 from django.contrib import messages
@@ -48,3 +49,10 @@ class UpdatePostView(UpdateView):
     form_class = PostForm
     template_name = 'blog/edit_post.html'
     #fields = '__all__'
+
+
+class DeletePostView(DeleteView):
+    model = Post
+    template_name = 'blog/delete_post.html'
+    success_url = reverse_lazy('blog')
+    success_message = 'Post has successfully been deleted.'
