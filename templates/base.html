@@ -202,6 +202,34 @@
         <footer class="bg-dark mt-auto text-center text-white">
             <div class="container p-4 pb-0">
                 <div class="mb-4">
+                    <!-- Newsletter Sign Up -->
+                    {% if not user.is_authenticated %}
+                        <section class="">
+                            <form action="" method="post">
+                                <div class="row d-flex justify-content-center">
+                                {% csrf_token %}
+
+                                    <div class="col-auto">
+                                        <p class="pt-2">Subscribe for our newsletter</p>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <input id="name" name="name" class="form-control" placeholder="Your Name"/>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <input id="email" name="email" type="email" class="form-control" placeholder="Email address"/>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btncolor">
+                                            <i class="fa fa-arrow-circle-right fa-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    {% endif %}
                     <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" role="button"
                     aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
                     <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" role="button"

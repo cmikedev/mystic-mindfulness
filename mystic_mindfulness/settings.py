@@ -62,7 +62,6 @@ INSTALLED_APPS = [
     'profiles',
     'storages',
     'blog',
-    'newsletter',
 ]
 
 MIDDLEWARE = [

@@ -16,4 +16,4 @@ def index(request):
         'quotes': quotes,
     }
 
-    return render(request, 'base.html', context)
+    return render(request, 'home/index.html', context)
