@@ -11,14 +11,44 @@
 
 {% block content %}
     <div class="overlay"></div>
-    
+    <hr>
     <h1>Posts</h1>
     <ul>
         {% for post in object_list %}
             <li><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/>
             {{ post.body }}</li>
+            <li class="box-style">
+                {{ post.body }}
+            </li>
         {% endfor %}
     </ul>
+    </br>
+    {% for post in object_list %}
+        <div class="table box-style">
+            <div class="col"></div>
+        </div>
+    
+        <table class="box-style">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Date</th>
+                <td>Mark</td>
+                <td>{{ post.title }}</td>
+                <td>{{ post.body|slice:":200" }}</td>
+                <td><a href="{% url 'post-details' post.pk %}" class="btn btn-outline-black">Read more</a></td>
+              </tr>
+            </tbody>
+          </table>
+    {% endfor %}
 
     
 

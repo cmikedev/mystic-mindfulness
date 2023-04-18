@@ -5,6 +5,8 @@ from .views import *
 
 urlpatterns = [
     path('', BlogView.as_view(), name='blog'),
-    path('post/<int:pk>', PostDetailView.as_view(), name='post-details'),
+    path('<int:pk>/', PostDetailView.as_view(), name='post-details'),
     path('add/', views.add_post, name='add-post'),
+    #path('edit/<int:pk>/', views.edit_post, name='edit-post'),
+    path('edit/<int:pk>/', UpdatePostView.as_view(), name='edit-post'),
 ]

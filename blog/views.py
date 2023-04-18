@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect, reverse
-from django.views.generic import ListView, DetailView
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.generic import ListView, DetailView, UpdateView
 from django.contrib.auth.decorators import login_required
 from .models import *
 from .forms import PostForm
@@ -40,3 +40,11 @@ def add_post(request):
     }
 
     return render(request, template, context)
+
+
+#@login_required
+class UpdatePostView(UpdateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'blog/edit_post.html'
+    #fields = '__all__'
