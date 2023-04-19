@@ -34,15 +34,3 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
-
-
-class SubscribedUsers(models.Model):
-    """
-    Store info for email newsletter
-    """
-    name = models.CharField(max_length=100)
-    email = models.EmailField(unique=True, max_length=100)
-    created_date = models.DateTimeField('Date created', default=timezone.now)
-
-    def __str__(self):
-        return self.email
