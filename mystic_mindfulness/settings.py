@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'storages',
     'blog',
     'newsletter',
+    'tinymce',
 ]
 
 MIDDLEWARE = [

@@ -7,6 +7,7 @@ from django.core.exceptions import ValidationError
 
 from .models import *
 from .forms import *
+from .decorators import user_is_superuser
 
 
 def subscribe(request):
