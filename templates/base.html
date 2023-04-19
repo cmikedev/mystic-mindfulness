@@ -205,7 +205,7 @@
                     <!-- Newsletter Sign Up -->
                     {% if not user.is_authenticated %}
                         <section class="">
-                            <form action="" method="post">
+                            <form action="{% url 'subscribe' %}" method="post">
                                 <div class="row d-flex justify-content-center">
                                 {% csrf_token %}
 
