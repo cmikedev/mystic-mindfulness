@@ -4,6 +4,9 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
+from django.core.mail import EmailMessage
+from django.core.mail import send_mail
+from django.conf import settings
 
 from .models import *
 from .forms import *
@@ -52,13 +55,19 @@ def newsletter(request):
             receivers = form.cleaned_data.get('receivers').split(',')
             email_message = form.cleaned_data.get('message')
 
-            mail = EmailMessage(subject, email_message, f"PyLessons <{request.user.email}>", bcc=receivers)
-            mail.content_subtype = 'html'
+            #mail = EmailMessage(subject, email_message, f"PyLessons <{settings.DEFAULT_FROM_EMAIL}>", bcc=receivers)
+            #mail.content_subtype = 'html'
 
-            if mail.send():
+            if send_mail(
+                subject,
+                email_message,
+                settings.DEFAULT_FROM_EMAIL,
+                [receivers]
+                ):
                 messages.success(request, "Email sent succesfully")
             else:
-                messages.error(request, "There was an error sending email")
+                messages.error(request, "There was an error sending email")      
+
 
         else:
             for error in list(form.errors.values()):

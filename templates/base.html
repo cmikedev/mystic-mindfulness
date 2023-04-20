@@ -82,6 +82,10 @@
                                 <div class="text-center">
                                     <h4 class="my-0" style="font-family: Bilbo;">Welcome, <strong>{{request.user}}</strong></h4>
                                 </div>
+                            {% else %}
+                                <div class="text-center">
+                                    <h4 class="my-0" style="font-family: Bilbo;">Welcome, <strong>Guest</strong></h4>
+                                </div>
                             {% endif %}
                         </li>
                         <li class="list-inline-item dropdown">

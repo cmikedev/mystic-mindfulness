@@ -80,6 +80,16 @@
 }
 
 
+/* Newletter */
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
 /* All code below is from Boutique Ado */
 
 html {
