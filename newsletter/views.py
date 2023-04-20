@@ -55,18 +55,13 @@ def newsletter(request):
             receivers = form.cleaned_data.get('receivers').split(',')
             email_message = form.cleaned_data.get('message')
 
-            #mail = EmailMessage(subject, email_message, f"PyLessons <{settings.DEFAULT_FROM_EMAIL}>", bcc=receivers)
-            #mail.content_subtype = 'html'
+            mail = EmailMessage(subject, email_message, f"PyLessons <{settings.DEFAULT_FROM_EMAIL}>", bcc=receivers)
+            mail.content_subtype = 'html'
 
-            if send_mail(
-                subject,
-                email_message,
-                settings.DEFAULT_FROM_EMAIL,
-                [receivers]
-                ):
+            if mail.send():
                 messages.success(request, "Email sent succesfully")
             else:
-                messages.error(request, "There was an error sending email")      
+                messages.error(request, "There was an error sending email")     
 
 
         else:
