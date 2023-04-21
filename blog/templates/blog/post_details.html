@@ -11,9 +11,12 @@
 
 {% block content %}
     <div class="overlay"></div>
-    
-    <h1>{{ post.title }}</h1>
+    <br/><br/>
+    <h1 style="font-family: Bilbo;">{{ post.title }}</h1>
     <small>By: {{ post.author }}</small><br/>
+    <a href="{{ post.image.url }}" target="_blank">
+        <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.name }}">
+    </a>
     <hr>
     <br/>
     {{ post.body }}
