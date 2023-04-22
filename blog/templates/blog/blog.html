@@ -28,9 +28,9 @@
     <ul>
         {% for post in object_list %}
             <li><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/>
-            {{ post.body }}</li>
+            {{ post.body|safe }}</li>
             <li class="box-style">
-                {{ post.body }}
+                {{ post.body|safe }}
             </li>
         {% endfor %}
     </ul>
@@ -55,7 +55,7 @@
                 <th scope="row">Date</th>
                 <td>Mark</td>
                 <td>{{ post.title }}</td>
-                <td>{{ post.body|slice:":200" }}</td>
+                <td>{{ post.body|safe| slice:":200" }}</td>
                 <td><a href="{% url 'post-details' post.pk %}" class="btn btn-outline-black">Read more</a></td>
               </tr>
             </tbody>

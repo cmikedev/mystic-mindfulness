@@ -10,7 +10,8 @@ class Post(models.Model):
         User, 
         on_delete=models.CASCADE
         )
-    body = models.TextField()
+    body = RichTextField(null=True, blank=True)
+    #body = models.TextField()
     image = models.ImageField(null=True, blank=True)
     date_posted = models.DateTimeField(auto_now_add=True)
 
@@ -22,3 +23,10 @@ class Post(models.Model):
     
     def get_absolute_url(self):
         return reverse('blog')
+
+    def get_image(self):
+        try:
+            url = self.image.url
+        except:
+            url='/media/noimage.png'
+        return url

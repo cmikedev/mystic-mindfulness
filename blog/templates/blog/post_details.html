@@ -17,14 +17,20 @@
         <small>By: {{ post.author }}</small><br/>
         <br/>
         <div class="blog-image-container">
-            <a href="{{ post.image.url }}" target="_blank">
-                <img class="img-fluid" src="{{ post.image.url }}" alt="{{ post.name }}">
-            </a>
+            {% if post.image %}
+                <a href="{{ post.image.url }}" target="_blank">
+                    <img class="img-fluid" src="{{ post.image.url }}" alt="{{ post.name }}">
+                </a>
+            {% else %}
+                <a href="">
+                    <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+                </a>
+            {% endif %}
         </div>
         <hr>
         <br/>
     </div>
-    {{ post.body }}
+    {{ post.body|safe }}
     <br/>
     <hr>
 
