@@ -10,6 +10,7 @@ class Post(models.Model):
         User, 
         on_delete=models.CASCADE
         )
+    summary = models.CharField(max_length=300)
     body = RichTextField(null=True, blank=True)
     #body = models.TextField()
     image = models.ImageField(null=True, blank=True)

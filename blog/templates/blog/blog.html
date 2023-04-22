@@ -11,23 +11,26 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <br/><br/><br/>
+    <br/><br/>
     <div class="hero-section">
         <div class="content">
+            <br/>
             <h1 style="font-family: Bilbo; color: white;">The Mystic Mindfulness <strong>Blog</strong></h1>
+            <br/>
         </div>
     </div>
     <hr>
     <h3 style="font-family: Bilbo;">Expert guidance on opening your life to the power of crystals</h3>
-    {% if request.user.is_superuser %}
-        <br/>
-        <div>
-            <a href="{% url 'add-post' %}" class="btn btn-outline-black">Add a Post</a>
-        </div>
-        <br/>
-    {% endif %}
     </br>
-    {% for post in object_list %}
+    {% if request.user.is_superuser %}
+        <div>
+            <br/>
+            <a href="{% url 'add-post' %}" class="btn btn-outline-black">Add Post</a>
+            <br/>
+        </div>
+        <br/><br/>
+    {% endif %}
+    <!--{% for post in object_list %}
         <div class="table box-style">
             <div class="col"></div>
         </div>
@@ -50,7 +53,7 @@
               </tr>
             </tbody>
           </table>
-    {% endfor %}
+    {% endfor %}-->
 
     {% for post in object_list %}
         <div class="row box-style">
@@ -68,11 +71,18 @@
             </div>
             <div class="col-5" style="text-align: center;">
                 <p class="my-0"><strong>{{ post.title }}</strong></p>
-                <p class="my-0 small">Size: {{ post.title }}</p>
-                <p class="my-0 small text-muted">Qty: {{ post.title }}</p>
+                <p class="my-0 small">{{ post.summary }}</p>
+                <p class="my-0 small text-muted">Posted by: {{ post.author }}</p>
             </div>
             <div class="col-3 text-right">
                 <a href="{% url 'post-details' post.pk %}" class="btn btn-outline-black">Read more</a>
+                {% if request.user.is_superuser %}
+                    <div>
+                        <br/>
+                        <a href="{% url 'edit-post' post.pk %}">Edit Post</a> | 
+                        <a class="text-danger" href="{% url 'delete-post' post.pk %}">Delete Post</a>
+                    </div>
+                {% endif %}
             </div>
         </div>
         <br/>
