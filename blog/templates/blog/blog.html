@@ -25,35 +25,11 @@
     {% if request.user.is_superuser %}
         <div>
             <br/>
-            <a href="{% url 'add-post' %}" class="btn btn-outline-black">Add Post</a>
+            <a href="{% url 'add_post' %}" class="btn btn-outline-black">Add Post</a>
             <br/>
         </div>
         <br/><br/>
     {% endif %}
-    <!--{% for post in object_list %}
-        <div class="table box-style">
-            <div class="col"></div>
-        </div>
-    
-        <table class="box-style">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">{{ post.date_posted }}</th>
-                <td>Image Holder</td>
-                <td style="text-align: left;">{{ post.title }}</td>
-                <td><a href="{% url 'post-details' post.pk %}" class="btn btn-outline-black">Read more</a></td>
-              </tr>
-            </tbody>
-          </table>
-    {% endfor %}-->
 
     {% for post in object_list %}
         <div class="row box-style">
@@ -61,7 +37,7 @@
                 <p class="my-0"><strong>{{ post.date_posted }}</strong></p>
             </div>
             <div class="col-2 mb-1">
-                <a href="{% url 'post-details' post.pk %}">
+                <a href="{% url 'post_details' post.pk %}">
                     {% if post.image %}
                         <img class="w-100" src="{{ post.image.url }}" alt="{{ post.name }}">
                     {% else %}
@@ -69,18 +45,18 @@
                     {% endif %}
                 </a>
             </div>
-            <div class="col-5" style="text-align: center;">
-                <p class="my-0"><strong>{{ post.title }}</strong></p>
-                <p class="my-0 small">{{ post.summary }}</p>
+            <div class="col-5" style="text-align: left;">
+                <h4 class="my-0"><strong>{{ post.title }}</strong></h4>
+                <p class="my-0 small">{{ post.body|slice:":200"|safe }}...<a href="{% url 'post_details' post.pk %}">Read more</a></p>
                 <p class="my-0 small text-muted">Posted by: {{ post.author }}</p>
             </div>
             <div class="col-3 text-right">
-                <a href="{% url 'post-details' post.pk %}" class="btn btn-outline-black">Read more</a>
+                <a href="{% url 'post_details' post.pk %}" class="btn btn-outline-black">Read more</a>
                 {% if request.user.is_superuser %}
                     <div>
                         <br/>
-                        <a href="{% url 'edit-post' post.pk %}">Edit Post</a> | 
-                        <a class="text-danger" href="{% url 'delete-post' post.pk %}">Delete Post</a>
+                        <a href="{% url 'edit_post' post.pk %}">Edit Post</a> | 
+                        <a class="text-danger" href="{% url 'delete_post' post.pk %}">Delete Post</a>
                     </div>
                 {% endif %}
             </div>

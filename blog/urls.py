@@ -5,9 +5,10 @@ from .views import *
 
 urlpatterns = [
     path('', BlogView.as_view(), name='blog'),
-    path('<int:pk>/', PostDetailView.as_view(), name='post-details'),
-    path('add/', views.add_post, name='add-post'),
+    path('<int:pk>/', PostDetailView.as_view(), name='post_details'),
+    path('add/', views.add_post, name='add_post'),
     #path('edit/<int:pk>/', views.edit_post, name='edit-post'),
-    path('edit/<int:pk>/', UpdatePostView.as_view(), name='edit-post'),
-    path('delete/<int:pk>/', DeletePostView.as_view(), name='delete-post'),
+    path('edit/<int:pk>/', UpdatePostView.as_view(), name='edit_post'),
+    path('delete/<int:pk>/', DeletePostView.as_view(), name='delete_post'),
+    path('comment/<int:pk>/', AddCommentView.as_view(), name='add_comment'),
 ]
