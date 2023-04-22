@@ -55,6 +55,18 @@
     text-transform: capitalize;
 }
 
+/* Blog */
+
+.blog-image-container {
+    background-size: contain;
+    width: 33%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /* Other */
 
 #front-image {

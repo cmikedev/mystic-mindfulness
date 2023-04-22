@@ -11,6 +11,10 @@ class Post(models.Model):
         )
     body = models.TextField()
     image = models.ImageField(null=True, blank=True)
+    date_posted = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["date_posted"]
 
     def __str__(self):
         return self.title + ' | ' + str(self.author)
