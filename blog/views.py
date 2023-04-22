@@ -6,6 +6,8 @@ from django.views import generic
 from .models import *
 from .forms import PostForm
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class BlogView(ListView):
@@ -45,14 +47,15 @@ def add_post(request):
 
 
 #@login_required
-class UpdatePostView(UpdateView):
+class UpdatePostView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Post
     form_class = PostForm
+    success_message = ('Successfully updated post!')
     template_name = 'blog/edit_post.html'
-    #fields = '__all__'
 
 
-class DeletePostView(DeleteView):
+class DeletePostView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     model = Post
+    success_message = ('Post has been deleted!')
     template_name = 'blog/delete_post.html'
     success_url = reverse_lazy('blog')
