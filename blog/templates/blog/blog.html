@@ -18,6 +18,13 @@
     </div>
     <hr>
     <h3 style="font-family: Bilbo;">Expert guidance on opening your life to the power of crystals</h3>
+    {% if request.user.is_superuser %}
+        <br/>
+        <div>
+            <a href="{% url 'add-post' %}" class="btn btn-outline-black">Add a Post</a>
+        </div>
+        <br/>
+    {% endif %}
     <ul>
         {% for post in object_list %}
             <li><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/>
