@@ -145,10 +145,11 @@
             </div>
             <div id="delivery-banner" class="row text-center">
                 <div class="col bg-black text-white">
-                    <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+                    <h4 id="mystic-quote" class="my-1" style="font-family: Bilbo;"></h4>
+                    <!--<h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
                     {% for quote in quotes %}
                         <h5 class="my-1">"{{ quote.body }}" ~ <em><small>{{ quote.author }}</small></em></h5>
-                    {% endfor %}              
+                    {% endfor %}-->              
                 </div>            
             </div>
         </header>
@@ -229,7 +230,7 @@
                                 {% csrf_token %}
 
                                     <div class="col-auto">
-                                        <p class="pt-2">Subscribe for our newsletter</p>
+                                        <p class="pt-2">Subscribe to our newsletter</p>
                                     </div>
 
                                     <div class="col-auto">
@@ -269,6 +270,31 @@
                 $('.toast').show();
             </script>-->
 
+            <script>
+                const quotes = [
+                    "What is divine escapes men's notice because of their incredulity - Heraclitus",
+                    "In mysticism we deal with dreaming and the fields of perception - Frederick Lenz",
+                    "Nothing can so pierce the soul as the uttermost sigh of the body - George Santayana",
+                    "Mysticism is the acceptance that everything cannot be logically explained - Frederick Lenz",
+                    "Without mysticism man can achieve nothing great - Andre Gide",
+                    "Mysticism is the mistake of an accidental and individual symbol for an universal one - Ralph Waldo Emerson",
+                    "Mysticism is just tomorrow's science dreamed today - Marshall McLuhan",
+                    "The business and method of mysticism is love - Evelyn Underhill",
+                    "A mystic is a person who sees the facts as inadequate - Madeleine L'Engle",
+                    "The finest emotion of which we are capable is the mystic emotion - Albert Einstein",
+                    "Mysticism is the art of union with Reality - Evelyn Underhill",
+                ];
+
+                var quote = document.getElementById('mystic-quote')
+
+                window.onload = displayQuote();
+          
+                function displayQuote() {
+                    quote.innerHTML = quotes[(Math.floor(Math.random() * quotes.length))];
+                };
+            </script>
+
+            <!-- From Boutique Ado Tutorial - see README.md references-->
             <script>
                 let toastElList = [].slice.call(document.querySelectorAll('.toast'))
                 let toastList = toastElList.map(function (toastEl) {
