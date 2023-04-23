@@ -15,13 +15,6 @@
         <br/><br/>
         <h1 style="font-family: Bilbo;">{{ post.title }}</h1>
         <small>By: {{ post.author }}</small><br/>
-        {% if request.user.is_superuser %}
-            <div>
-                <br/>
-                <a href="{% url 'edit_post' post.pk %}">Edit Post</a> | 
-                <a class="text-danger" href="{% url 'delete_post' post.pk %}">Delete Post</a>
-            </div>
-        {% endif %}
         <br/>
         <div class="blog-image-container">
             {% if post.image %}
@@ -78,6 +71,7 @@
         <br/>
         <a href="{% url 'blog' %}" class="btn btn-outline-black">Back</a>
         <br/>
-    </div> 
+    </div>
+    <br/>
 
 {% endblock %}
