@@ -78,7 +78,7 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item">
-                            {% if user.is_authenticated %}
+                            <!--{% if user.is_authenticated %}
                                 <div class="text-center">
                                     <h4 class="my-0" style="font-family: Bilbo;">Welcome, <strong>{{request.user}}</strong></h4>
                                 </div>
@@ -86,13 +86,19 @@
                                 <div class="text-center">
                                     <h4 class="my-0" style="font-family: Bilbo;">Welcome, <strong>Guest</strong></h4>
                                 </div>
-                            {% endif %}
+                            {% endif %}-->
                         </li>
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><i class="fas fa-user fa-lg"></i></div>
-                                    <p class="my-0">My Account</p>
+                                    {% if user.is_authenticated %}
+                                        <p class="my-0" style="font-family: Bilbo;">Welcome, <strong>{{request.user}}</strong></p>
+                                    {% else %}
+                                        <p class="my-0" style="font-family: Bilbo;">Welcome, <strong>Guest</strong>
+                                    {% endif %}
+
+                                    <!--<p class="my-0">My Account</p>-->
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
