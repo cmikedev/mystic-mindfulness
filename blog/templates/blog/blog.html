@@ -26,7 +26,7 @@
     {% for post in object_list %}
         <div class="row box-style">
             <div class="col-2">
-                <p class="my-0"><strong>{{ post.date_posted }}</strong></p>
+                <p class="my-0 small"><strong>{{ post.date_posted }}</strong></p>
             </div>
             <div class="col-2 mb-1">
                 <a href="{% url 'post_details' post.pk %}">
@@ -47,8 +47,8 @@
                 {% if request.user.is_superuser %}
                     <div>
                         <br/>
-                        <a href="{% url 'edit_post' post.pk %}">Edit Post</a> | 
-                        <a class="text-danger" href="{% url 'delete_post' post.pk %}">Delete Post</a>
+                        <a class="small" href="{% url 'edit_post' post.pk %}">Edit Post</a> | 
+                        <a class="text-danger small" href="{% url 'delete_post' post.pk %}">Delete Post</a>
                     </div>
                 {% endif %}
             </div>
