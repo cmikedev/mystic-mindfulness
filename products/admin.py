@@ -10,9 +10,9 @@ admin.site.register(Review)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'slug',
+        'friendly_name',
         )
-    prepopulated_fields = {'slug': ('name',)}
+    prepopulated_fields = {'friendly_name': ('name',)}
 
 
 @admin.register(Product)
@@ -20,8 +20,8 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'category',
-        'slug',
+        'friendly_name',
         'image',
         'price',
         )
-    prepopulated_fields = {'slug': ('name',)}
+    prepopulated_fields = {'friendly_name': ('name',)}

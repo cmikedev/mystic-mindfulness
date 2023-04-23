@@ -70,7 +70,8 @@
 /* Other */
 
 #front-image {
-    background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;
+    /*background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;*/
+    background: url('/media/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
 }
