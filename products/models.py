@@ -48,8 +48,8 @@ class Product(models.Model):
     def __str__(self):
         return self.name
     
-    def get_absolute_url(self):
-        return reverse('detail', kwargs={'slug': self.slug, 'pk': self.pk})
+    #def get_absolute_url(self):
+    #    return reverse('detail', kwargs={'slug': self.slug, 'pk': self.pk})
     
     def get_rating(self):
         reviews_total = 0
