@@ -15,28 +15,43 @@ class Photo(models.Model):
         return self.title
 
 
-"""class Category(models.Model):
-    name = models.CharField(max_length=255)
-    friendly_name = models.CharField(max_length=255, null=True, blank=True)
+class Category(models.Model):
 
     class Meta:
-        ordering = ('name',)
         verbose_name_plural = 'Categories'
+        
+    #name = models.CharField(max_length=254)
+    #friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    AMETHYST = "Amethyst"
+    CALCITE = "Calcite"
+    QUARTZ = "Quartz"
+    CATEGORY_CHOICES = [
+        (AMETHYST, "Amethyst"),
+        (CALCITE, "Calcite"),
+        (QUARTZ, "Quartz"),
+    ]
+    name = models.CharField(
+        max_length=10,
+        choices=CATEGORY_CHOICES,
+        default=QUARTZ,
+    )
     
+
     def __str__(self):
         return self.name
-    
+
     def get_friendly_name(self):
         return self.friendly_name
-"""
+
 
 class Product(models.Model):
-    #category = models.ForeignKey(
-    #    'Category',
-    #    null=True,
-    #    blank=True,
-    #    on_delete=models.SET_NULL)
-    AMETHYST = "Amethyst"
+    category = models.ForeignKey(
+        'Category',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL)
+    """AMETHYST = "Amethyst"
     CALCITE = "Calcite"
     QUARTZ = "Quartz"
     CATEGORY_CHOICES = [
@@ -48,7 +63,7 @@ class Product(models.Model):
         max_length=10,
         choices=CATEGORY_CHOICES,
         default=QUARTZ,
-    )
+    )"""
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
