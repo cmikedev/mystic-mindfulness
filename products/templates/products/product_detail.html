@@ -107,7 +107,7 @@
         <h2>Reviews</h2>
 
         {% if request.user.is_authenticated %}
-            <form method="POST" action="" enctype="multipart/form-data" class="box-style bg-secondary rounded">
+            <form method="POST" action="" enctype="multipart/form-data" class="box-style bg-light rounded">
                 {% csrf_token %}
                 <div>
                     <label>Rating</label>
@@ -125,7 +125,7 @@
                     <textarea name="comment"></textarea>
                 </div>
                 <!--<button>Submit</button>-->
-                <input type="submit" value="Submit" class="btn btn-light btn-sm">
+                <input type="submit" value="Submit" class="btn btn-outline-dark btn-sm">
 
             </form>
         {% endif %}
