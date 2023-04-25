@@ -30,47 +30,44 @@
         <hr>
         <br/>
     </div>
-    {{ post.body|safe }}
+    <div style="text-align: justify; padding: 50px;">{{ post.body|safe }}</div>
     <br/>
     <hr>
-    
-    <br/><br/> 
-
-    <h2 style="font-family: Bilbo;">Comments...</h2>
-    <br>
-    {% if user.is_authenticated %}
-        <a href="{% url 'add_comment' post.pk %}" aria-label="Comment">Leave a comment</a>
+    <div style="padding: 50px; align-items: center;">
+        <h2 style="font-family: Bilbo;">Comments...</h2>
         <br>
-    {% else %}
-        <p>
-            You must be signed-in to comment. Please 
-            <a href="{% url 'account_login' %}" aria-label="Sign in to acount">sign in</a> or 
-            <a href="{% url 'account_signup' %}" aria-label="Register an account">register</a>
-        </p>
-    {% endif %}
-    <br>
-    {% if not post.comments.all %}
+        {% if user.is_authenticated %}
+            <a href="{% url 'add_comment' post.pk %}" aria-label="Comment">Leave a comment</a>
+        {% else %}
+            <p>
+                You must be signed-in to comment. Please 
+                <a href="{% url 'account_login' %}" aria-label="Sign in to acount">sign in</a> or 
+                <a href="{% url 'account_signup' %}" aria-label="Register an account">register</a>
+            </p>
+        {% endif %}
+        <br><br><br>
+        {% if not post.comments.all %}
         No comments yet...Be the first to comment!
-        <br><br>
-    {% else %}
-        {% for comment in post.comments.all %}
-            <strong>
-                {{comment.name}} - 
-                {{comment.date_added}}
-            </strong>
+        {% else %}
+            {% for comment in post.comments.all %}
+                <strong>
+                    {{comment.name}} - 
+                    {{comment.date_added}}
+                </strong>
+                <br>
+                {{comment.body|safe}}
+                <br>
+            {% endfor %}
+        {% endif %}
+        {% if user.is_authenticated %}
+            <a href="{% url 'add_comment' post.pk %}" aria-label="Comment">Leave a comment</a>
             <br>
-            {{comment.body|safe}}
-            <br><br>
-        {% endfor %}
-    {% endif %}
-    {% if user.is_authenticated %}
-        <a href="{% url 'add_comment' post.pk %}" aria-label="Comment">Leave a comment</a>
-        <br>
-    {% endif %}
-    <div>
-        <br/>
-        <a href="{% url 'blog' %}" class="btn btn-outline-black">Back</a>
-        <br/>
+        {% endif %}
+        <div>
+            <br/>
+            <a href="{% url 'blog' %}" class="btn btn-outline-black">Back</a>
+            <br/>
+        </div>
     </div>
     <br/>
 
