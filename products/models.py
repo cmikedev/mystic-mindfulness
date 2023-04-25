@@ -1,5 +1,4 @@
 from django.db import models
-#from cloudinary.models import CloudinaryField
 from django.contrib.auth.models import User
 
 
@@ -16,12 +15,12 @@ class Photo(models.Model):
 
 
 class Category(models.Model):
-
+    """
+    This model defines the categories for the
+    Products
+    """
     class Meta:
         verbose_name_plural = 'Categories'
-        
-    #name = models.CharField(max_length=254)
-    #friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     AMETHYST = "Amethyst"
     CALCITE = "Calcite"
@@ -36,13 +35,9 @@ class Category(models.Model):
         choices=CATEGORY_CHOICES,
         default=QUARTZ,
     )
-    
 
     def __str__(self):
         return self.name
-
-    #def get_friendly_name(self):
-    #    return self.friendly_name
 
     def get_name(self):
         return self.name
@@ -54,19 +49,6 @@ class Product(models.Model):
         null=True,
         blank=True,
         on_delete=models.SET_NULL)
-    """AMETHYST = "Amethyst"
-    CALCITE = "Calcite"
-    QUARTZ = "Quartz"
-    CATEGORY_CHOICES = [
-        (AMETHYST, "Amethyst"),
-        (CALCITE, "Calcite"),
-        (QUARTZ, "Quartz"),
-    ]
-    category = models.CharField(
-        max_length=10,
-        choices=CATEGORY_CHOICES,
-        default=QUARTZ,
-    )"""
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -77,9 +59,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-    
-    #def get_absolute_url(self):
-    #    return reverse('detail', kwargs={'slug': self.slug, 'pk': self.pk})
     
     def get_rating(self):
         reviews_total = 0
@@ -94,6 +73,10 @@ class Product(models.Model):
 
 
 class Review(models.Model):
+    """
+    This model allows the creation and
+    storage of a product rating and review
+    """
     product = models.ForeignKey(
         Product,
         related_name='reviews',

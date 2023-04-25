@@ -80,7 +80,7 @@
                                             {% endif %}
                                             {% if product.get_rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i> {{ product.get_rating }} / 5</small>
-                                            {% else %}
+                                            {% else %} 
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
