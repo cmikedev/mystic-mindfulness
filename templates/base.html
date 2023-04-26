@@ -170,13 +170,11 @@
                     {% if not user.is_authenticated %}
                         <section class="container-fluid" style="align-items: right;">
                             <form action="{% url 'subscribe' %}" method="post">
-                                <div class="row justify-content-center" style="align-items: center;">
+                                <div class="col-auto my-2">
+                                    <p class="pt-2">Subscribe to our newsletter</p>
+                                </div>
+                                <div class="row justify-content-center" style="display: inline-flex;">
                                 {% csrf_token %}
-            
-                                    <div class="col-auto my-2">
-                                        <p class="pt-2">Subscribe to our newsletter</p>
-                                    </div>
-            
                                     <div class="col-auto my-2">
                                         <input id="name" name="name" class="form-control" placeholder="Your Name"/>
                                     </div>
@@ -184,12 +182,11 @@
                                     <div class="col-auto my-2">
                                         <input id="email" name="email" type="email" class="form-control" placeholder="Email address"/>
                                     </div>
-            
-                                    <div class="col-auto my-2">
-                                        <button type="submit" class="btn btn-outline-light">
-                                            Subscribe
-                                        </button>
-                                    </div>
+                                </div>
+                                <div class="col-auto my-2">
+                                    <button type="submit" class="btn btn-outline-light">
+                                        Subscribe
+                                    </button>
                                 </div>
                             </form>
                         </section>
