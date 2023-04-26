@@ -10,8 +10,8 @@ admin.site.register(Review)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        #'friendly_name',
         )
+
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
