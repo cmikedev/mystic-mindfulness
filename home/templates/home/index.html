@@ -10,22 +10,8 @@
 {% endblock %}
 
 {% block content %}
-<!--<div class="container h-100">
-        <div class="row h-100">
-            <div class="box-style-opaque col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    The new collections are here
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </div>-->
     <div class="overlay"></div>
-    <br/><br/><br/>
+    <br><br><br>
     <div class="hero-section" style="text-align: center;">
         <div class="content">
             <p class="sub-heading" style="font-family: Bilbo;">The Best Collection of Healing Crystals Online</p>
@@ -34,25 +20,28 @@
             </h4>
         </div>
     </div>
-    <br/>
+    <br>
     <div class="row text-center p-2">
         <div class="col">
-            <h6>FREE DELIVERY <i class="fa-solid fa-truck" style="color: #000000;"></i></h6>
+            <h6>FREE DELIVERY</h6>
+            <h6><i class="fa-solid fa-truck" style="color: #000000;"></i></h6>
             <small>Free delivery on all orders over $35</small>
         </div>
         <div class="col">
-            <h6>FREE RETURNS <i class="fa-sharp fa-solid fa-box-open" style="color: #000000;"></i></h6>
+            <h6>FREE RETURNS</h6>
+            <h6><i class="fa-sharp fa-solid fa-box-open" style="color: #000000;"></i></h6>
             <small>Returns are free within 30 days</small>
         </div>
         <div class="col">
-            <h6>SECURE PAYMENT <i class="fa-solid fa-credit-card" style="color: #000000;"></i></h6>
+            <h6>SECURE PAYMENT</h6>
+            <h6><i class="fa-solid fa-credit-card" style="color: #000000;"></i></h6>
             <small>Shop with confidence!</small>
         </div>
     </div>
-    <br/>
+    <br>
 
     <!-- Crystals -->
-    <section class="collection-container container-fluid" style="font-family: Bilbo;">
+    <div class="collection-container container-fluid" style="font-family: Bilbo;">
         <a href="{% url 'products' %}?category=Amethyst" class="collection">
             <img src="/media/amethyst.jpg" alt="">
             <p class="collection-title">Amethyst</p>
@@ -65,10 +54,10 @@
             <img src="/media/quartz.jpg" alt="">
             <p class="collection-title">Quartz</p>
         </a>
-    </section>
-    <br/><br/>
-    <h3 style="font-family: Bilbo; margin: auto;">Need some inspiration? Why not visit our Blog for ideas on how to use Crystals</h3>
-    <br/>
+    </div>
+    <br><br>
+    <h3 style="font-family: Bilbo; margin: auto; padding: 50px;">Need some inspiration? Why not visit our Blog for ideas on how to use Crystals</h3>
+    <br>
     <div class="hero-section" style="text-align: center;">
         <div class="content">
             <p class="sub-heading" style="font-family: Bilbo;">Visit our Blog</p>
@@ -77,6 +66,6 @@
             </h4>
         </div>
     </div>
-    <br/><br/>  
+    <br><br>  
 
 {% endblock %}

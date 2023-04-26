@@ -77,17 +77,6 @@
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                        <li class="list-inline-item">
-                            <!--{% if user.is_authenticated %}
-                                <div class="text-center">
-                                    <h4 class="my-0" style="font-family: Bilbo;">Welcome, <strong>{{request.user}}</strong></h4>
-                                </div>
-                            {% else %}
-                                <div class="text-center">
-                                    <h4 class="my-0" style="font-family: Bilbo;">Welcome, <strong>Guest</strong></h4>
-                                </div>
-                            {% endif %}-->
-                        </li>
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
@@ -97,8 +86,6 @@
                                     {% else %}
                                         <p class="my-0" style="font-family: Bilbo;">Welcome, <strong>Guest</strong>
                                     {% endif %}
-
-                                    <!--<p class="my-0">My Account</p>-->
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -146,53 +133,10 @@
             <div id="delivery-banner" class="row text-center">
                 <div class="col bg-black text-white">
                     <h4 id="mystic-quote" class="my-1" style="font-family: Bilbo;"></h4>
-                    <!--<h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
-                    {% for quote in quotes %}
-                        <h5 class="my-1">"{{ quote.body }}" ~ <em><small>{{ quote.author }}</small></em></h5>
-                    {% endfor %}-->              
                 </div>            
             </div>
         </header>
         <!-- End -->
-
-        <!-- Navigation -->
-        
-        
-        <!--<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="font-family: Bilbo; font-size: 200%;">Mystic Mindfulness</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" aria-label="Go to the homepage">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" aria-label="Visit the store">Shop <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" aria-label="Go to your cart">Cart <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" aria-label="Go to checkout">Checkout <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                    <div class="row ms-auto">
-                        <div class="d-flex my-2 my-lg-0">
-                            <div class="col">
-                                <a href="#" class="btn btn-outline-light" aria-label="Login">REGISTER</a>
-                            </div>
-                            <div class="col">
-                                <a href="#" class="btn btn-outline-light" aria-label="Register an account">SIGN IN</a>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <br><br><br>-->
 
         {% if messages %}
             <div class="message-container">
@@ -226,10 +170,10 @@
                     {% if not user.is_authenticated %}
                         <section class="container-fluid" style="align-items: right;">
                             <form action="{% url 'subscribe' %}" method="post">
-                                <div class="row justify-content-center">
+                                <div class="row justify-content-center" style="align-items: center;">
                                 {% csrf_token %}
             
-                                    <div class="col-auto">
+                                    <div class="col-auto my-2">
                                         <p class="pt-2">Subscribe to our newsletter</p>
                                     </div>
             
@@ -243,14 +187,13 @@
             
                                     <div class="col-auto my-2">
                                         <button type="submit" class="btn btn-outline-light">
-                                            <!--<i class="fa fa-arrow-circle-right fa-lg"></i>-->
                                             Subscribe
                                         </button>
                                     </div>
                                 </div>
                             </form>
                         </section>
-                        <br/>
+                        <br>
                     {% endif %}
 
                     <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" role="button"
@@ -269,9 +212,6 @@
         <!-- Core JS-->
         
         {% block postloadjs %}
-            <!--<script type="text/javascript">
-                $('.toast').show();
-            </script>-->
 
             <script>
                 const quotes = [

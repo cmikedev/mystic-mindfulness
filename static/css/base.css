@@ -105,7 +105,14 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 505px) {
+
+    #reasons-to-shop {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 500px) {
 
     .blog-preview {
         font-size: 50%;
