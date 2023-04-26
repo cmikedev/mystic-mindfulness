@@ -248,16 +248,7 @@ else:
 
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': [
-            ['Undo', 'Redo',
-             '-', 'Bold', 'Italic', 'Underline',
-             '-', 'Link', 'Unlink', 'Anchor',
-             '-', 'Format',
-             
-             '-', 'Maximize',
-             
-            ],
-        ],  
+        'removePlugins': 'exportpdf',
         'width': 'auto',
         'toolbarCanCollapse': True,
     },

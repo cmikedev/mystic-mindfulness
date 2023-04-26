@@ -13,11 +13,11 @@
     <div class="overlay"></div>
     {% if user.is_superuser %}
         <div class="box-element" style="text-align: center; padding: 40px;">
-            <h1>Delete Post</h1>
+            <h1 style="font-family: Bilbo;">Delete Post</h1>
             <br>
-            <h4>Delete: {{ post.title }}?</h4>
+            <h4>Delete: <strong style="font-family: Bilbo;">{{ post.title }}</strong>?</h4>
             <br>
-            <strong>Warning - this action cannot be undone</strong>
+            <strong>Warning - this action cannot be undone!</strong>
             <br><br>
             <form action="#" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
