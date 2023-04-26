@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
+from django.views.generic import ListView, DetailView, UpdateView, \
+    DeleteView, CreateView
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django.views import generic
@@ -34,10 +35,13 @@ def add_post(request):
             messages.success(request, 'Successfully added post!')
             return redirect(reverse('post_details', args=[post.id]))
         else:
-            messages.error(request, 'Failed to add post. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add post. Please ensure the form is valid.'
+                )
     else:
         form = PostForm()
-        
+
     template = 'blog/add_post.html'
     context = {
         'form': form,
@@ -60,7 +64,8 @@ class DeletePostView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     success_url = reverse_lazy('blog')
 
 
-class AddCommentView(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
+class AddCommentView(LoginRequiredMixin, SuccessMessageMixin,
+                     generic.CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'blog/add_comment.html'

@@ -7,7 +7,7 @@ from ckeditor.fields import RichTextField
 class Post(models.Model):
     title = models.CharField(max_length=300)
     author = models.ForeignKey(
-        User, 
+        User,
         on_delete=models.CASCADE
         )
     body = RichTextField(null=True, blank=True)
@@ -19,7 +19,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title + ' | ' + str(self.author)
-    
+
     def get_absolute_url(self):
         return reverse('blog')
 
@@ -27,7 +27,7 @@ class Post(models.Model):
         try:
             url = self.image.url
         except:
-            url='/media/noimage.png'
+            url = '/media/noimage.png'
         return url
 
 
@@ -36,7 +36,6 @@ class Comment(models.Model):
             Post, related_name="comments", on_delete=models.CASCADE
         )
     name = models.CharField(max_length=255)
-    #body = models.TextField(max_length=500)
     body = RichTextField(null=True, blank=True, max_length=500)
     date_added = models.DateTimeField(auto_now_add=True)
 
