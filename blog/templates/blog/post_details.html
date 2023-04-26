@@ -48,6 +48,7 @@
         <br><br><br>
         {% if not post.comments.all %}
         No comments yet...Be the first to comment!
+        <br><br><br>
         {% else %}
             {% for comment in post.comments.all %}
                 <strong>
