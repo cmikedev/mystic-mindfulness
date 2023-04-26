@@ -21,15 +21,11 @@
     </div>
     <br/>
     <hr>
-    <h3 style="font-family: Bilbo; margin: auto;">Read guidance on opening your life to the power of crystals in posts written by our experts</h3>
+    <h3 style="font-family: Bilbo; margin: auto; padding: 10px;">Read guidance on opening your life to the power of crystals in posts written by our experts</h3>
     </br><br/>
 
     {% for post in object_list %}
         <div class="row box-style">
-            <!--<div class="col-2">
-                <p class="my-0 small"><strong>{{ post.date_posted }}</strong></p>
-            </div>-->
-            <!--<div class="col-2 mb-1">-->
             <div class="col-4 mb-1" style="text-align: center;">
                 <a href="{% url 'post_details' post.pk %}">
                     {% if post.image %}
@@ -40,8 +36,8 @@
                 </a>
             </div>
             <div class="blog-preview col-5" style="text-align: left;">
-                <h4 class="my-0"><strong>{{ post.title }}</strong></h4>
-                <p class="my-0 small">{{ post.body|slice:":100"|safe }}...<a href="{% url 'post_details' post.pk %}">Read more</a></p>
+                <h3 class="my-0" style="font-family: Bilbo;">{{ post.title }}</h3>
+                <p class="my-0 small">{{ post.body|slice:":75"|safe }}...<a href="{% url 'post_details' post.pk %}">Read more</a></p>
                 <p class="my-0 small text-muted">Posted by: {{ post.author }}</p>
             </div>
             <div class="blog-preview col-3 text-right">
@@ -58,7 +54,7 @@
         <br/><br/>
     {% endfor %}
 
-    <h3 style="font-family: Bilbo; margin: auto;">Ready to bring the healing power of crystals to your life? Visit our store.</h3>
+    <h3 style="font-family: Bilbo; margin: auto; padding: 10px;">Ready to bring the healing power of crystals to your life? Visit our store.</h3>
     <br/><br/>
     <div class="hero-section" style="text-align: center;">
         <div class="content">
