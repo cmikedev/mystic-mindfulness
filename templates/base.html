@@ -225,27 +225,27 @@
                     "Mysticism is the art of union with Reality - Evelyn Underhill",
                 ];
 
-                var quote = document.getElementById('mystic-quote')
+                var quote = document.getElementById('mystic-quote');
 
                 window.onload = displayQuote();
           
                 function displayQuote() {
                     quote.innerHTML = quotes[(Math.floor(Math.random() * quotes.length))];
-                };
+                }
             </script>
 
             <!-- From Boutique Ado Tutorial - see README.md references-->
             <script>
-                let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                let toastElList = [].slice.call(document.querySelectorAll('.toast'));
                 let toastList = toastElList.map(function (toastEl) {
                     let option = {
                         animation: true,
                         autohide: true,
                         delay: 5000,
-                    }
-                let bsToast = new bootstrap.Toast(toastEl, option)
+                    };
+                let bsToast = new bootstrap.Toast(toastEl, option);
                 bsToast.show();
-                })
+                });
             </script>
         {% endblock %}
     </body>
