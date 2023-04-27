@@ -72,7 +72,7 @@
 
 #front-image {
     /*background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;*/
-    background: url('/media/background.jpeg') no-repeat center center fixed;
+    /*background: url('/media/background.jpeg') no-repeat center center fixed;*/
     background-size: cover;
     height: calc(100vh - 164px);
 }
@@ -130,7 +130,7 @@ html {
 }
 
 body {
-    background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;
+    /*background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;*/
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -177,18 +177,6 @@ body {
     background: black;
     color: white !important;
 }
-
-/*
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
-*/
 
 .text-black {
     color: #000 !important;
