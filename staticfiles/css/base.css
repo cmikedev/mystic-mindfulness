@@ -1,7 +1,9 @@
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
-    background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;
+    /*background: url('/media/background.jpeg') no-repeat center center fixed;*/
+    background: url('/media/main-background.jpeg') no-repeat center center fixed;
+    /*background: url('https://images.pexels.com/photos/1816819/pexels-photo-1816819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center fixed;*/
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -66,11 +68,11 @@
 }
 
 
-
 /* Other */
 
 #front-image {
-    background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;
+    /*background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;*/
+    background: url('/media/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
 }
@@ -101,6 +103,25 @@
     border-radius: 3px;
     margin-bottom: 20px;
   }
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+
+    .blog-preview {
+        font-size: 50%;
+    }
+
+    .blog-preview-btn {
+        font-size: 75%;
+    }
+
+    .subscribe {
+        size-adjust: 50%;
+    }
+}
+    
+
 
 /* All code below is from Boutique Ado */
 
