@@ -11,13 +11,16 @@
 
 {% block content %}
     <div class="overlay"></div>
+    <br><br><br>
+    <h1 style="font-family: Bilbo; text-align: center;">Newsletter</h1>
+    <br>
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
-            {{ form|crispy  }}
-            {{ form.media  }}
+            {{ form|crispy }}
+            {{ form.media }}
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Send</button>
+                <button class="btn btn-outline-dark" type="submit">Send</button>
             </div>
         </form>
     </div>
