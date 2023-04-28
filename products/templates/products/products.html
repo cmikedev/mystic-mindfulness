@@ -16,8 +16,18 @@
         <div class="content">
             <br>
             <h1 style="font-family: Bilbo; color: white;">
-                {% if 'category' in request.GET %}
+                <!--{% if 'category' in request.GET %}
                     {{ request.get_full_path| cut:'/products/?category=' }}
+                {% else %}
+                    All Crystals
+                {% endif %}-->
+
+                {% if 'Amethyst' in request.get_full_path %}
+                        Amethyst
+                {% elif 'Calcite' in request.get_full_path %}
+                    Calcite
+                {% elif 'Quartz' in request.get_full_path %}
+                    Quartz
                 {% else %}
                     All Crystals
                 {% endif %}
