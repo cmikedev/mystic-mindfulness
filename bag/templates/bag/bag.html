@@ -10,8 +10,6 @@
     </div>
 {% endblock %}
 
-<!-- HTML has been edited from https://github.com/Code-Institute-Solutions/boutique_ado_v1/blob/master/bag/templates/bag/bag.html -->
-
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
@@ -108,7 +106,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg" aria-label="Go to products page">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
@@ -119,8 +117,6 @@
         </div>
     </div>
 {% endblock %}
-
-<!-- JS taken from https://github.com/Code-Institute-Solutions/boutique_ado_v1/blob/master/bag/templates/bag/bag.html -->
 
 {% block postloadjs %}
 {{ block.super }}
