@@ -47,8 +47,8 @@
         {% endif %}
         <br><br><br>
         {% if not post.comments.all %}
-        No comments yet...Be the first to comment!
-        <br><br><br>
+            No comments yet...Be the first to comment!
+            <br><br><br>
         {% else %}
             {% for comment in post.comments.all %}
                 <strong>
@@ -72,7 +72,6 @@
     </div>
     <hr>
     <br>
-
     <h3 style="font-family: Bilbo; margin: auto; padding: 10px;">Have we <strong>inspired</strong> you? Visit our store and connect with the healing energy of crystal.</h3>
     <br><br>
     <div class="hero-section" style="text-align: center;">
@@ -84,5 +83,4 @@
         </div>
     </div>
     <br><br>
-
 {% endblock %}
