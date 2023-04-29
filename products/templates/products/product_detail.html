@@ -99,14 +99,13 @@
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </form>
-                <!-- End -->
             </div>
         </div>
     </div>
     <div class="w-full mt-6" style="padding: 10px;">
         <h2 style="font-family: Bilbo;">Reviews</h2>
         {% if request.user.is_authenticated %}
-            <form method="POST" action="" enctype="multipart/form-data" class="box-style bg-light rounded">
+            <form method="POST" action="#" enctype="multipart/form-data" class="box-style bg-light rounded">
                 {% csrf_token %}
                 <div>
                     <label>Rating</label>
