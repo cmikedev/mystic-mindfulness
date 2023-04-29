@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://mystic-mindfulness.herokuapp.com/sitemap.xml
