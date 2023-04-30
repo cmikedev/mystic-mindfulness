@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-Mystic Mindfulness is a fictional ecommerce site offering for sale healing crystals. The premise of the site is not only appeal to customers already specifically interested in healing crystals but, also potential customers who subscribe to the umbrella 'wellness' lifestyle which, through various marketing strategies discussed below, can be pursuaded to incorporate crystals into their various practices and become paying customers.
+Mystic Mindfulness is a fictional ecommerce site offering for sale healing crystals. The premise of the site is to not only appeal to customers already specifically interested in healing crystals but, also potential customers who subscribe to the umbrella 'wellness' lifestyle which, through various marketing strategies discussed below, can be pursuaded to incorporate crystals into their various practices and become paying customers.
 
 ### 1.1 Deployed Website
 A link to the deployed project via the Heroku app can be found [here](https://mystic-mindfulness.herokuapp.com/).
@@ -14,7 +14,35 @@ The GitHub repository can be found [here](https://github.com/cmikedev/mystic-min
 ____
 </br>
 
+## 2. Business Case
 
+Mystic Mindfulness is a business-to-customer (B2C) ecommerce website selling healing crystals directly to online consumers. The site specializes in the main three types of healing crystals; Amethyst, Calcite and Quartz.
+
+### 2.1 Marketing Strategy
+
+Socia media
+
+#### Search Engines
+
+#### Facebook Business Page
+
+The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100092204265600). Please note that Facebook does not allow business pages to remain in perpetuity and the aforementioned link may be made inactive at any time. Should that occur at time of reading, the below screenshots have been provided to illustrate the active Mystic Mindfulness Facebook business page.
+
+#### The Blog
+
+The Mystic Mindfulness website contains a blog with posts written by the site admin. The purpose of the blog is twofold. Firstly, to provide education and guidance to any visitors who may be unsure of what crystals to purchase. By providing such a visitor with guidance they will be more sure of their needs and more likely to make a purchase. Secondly, by extolling the benefits of the crystals within the post topic, the blog itself becomes a marketing tool to drive up sales from visitors.
+
+____
+</br>
+
+
+## 3. Design
+
+Font-Family used was Bilbo. LOTR is a recognisable cultural reference and reinforces mystical/fantastical element of the site. Hope is that the font will create that connection in users head.
+
+Design - background to be somewhat ethereal/cosmic. 
+
+Large use of white colours to denote health, emptiness, clean-living. No clutter.
 
 
 W3C HTML:
