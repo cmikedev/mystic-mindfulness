@@ -277,9 +277,8 @@ ___
 Text</br>
 </br>
 
-![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-4.png?raw=true)</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-3.png?raw=true)</br>
 </br>
-
 
 ___
 
@@ -293,6 +292,12 @@ As a Site User I can leave a review of a product so that other users can decide 
 ___
 
 </br>
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-4.png?raw=true)</br>
+</br>
+
 Text</br>
 </br>
 
@@ -321,6 +326,12 @@ The review has been overwritten with the user's new review.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-9.png?raw=true)</br>
+</br>
+
+If the user then logs out and returns to the page, their review will be visible but the form to post a review will not be displayed.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-10.png?raw=true)</br>
 </br>
 
 
