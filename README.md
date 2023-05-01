@@ -181,14 +181,59 @@ As a Site User I can register an account so that I can add items to my cart.
 ___
 
 </br>
-If an unauthenticated site-visitor navigates to the page footer, they will be presented with a form to sign-up to the Mystic Mindfulness newsletter. Note that the visitor's login status is shown as "Guest".</br>
+When a user clicks on the profile icon a drop-down will be activated which gives the user the option to login or register an account.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-1.png?raw=true)</br>
+</br>
+
+The user needs to fill in their details and select Sign Up</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-2.png?raw=true)</br>
+</br>
+
+If the user already exists or if a required field has not been filled out, the form will not be submitted and the user will be notified of the problem.</br>
 </br>
 
 ![image]()</br>
 </br>
 
+Once their details have been entered correctly and the form submitted, the user will be informed that an email requiring confirmation has been sent to the email address that they provided.</br>
+</br>
 
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-3.png?raw=true)</br>
+</br>
 
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-4.png?raw=true)</br>
+</br>
+
+When the user clicks on the confirmation link in their email, they will be redirected back to the Mystic Mindfulness website and asked the confirm their details.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-5.png?raw=true)</br>
+</br>
+
+Once confirmed, the user will be notified that their confirmation has been accepted and they will be invited to log into their newly created account. Once logged in, the user will be notified of their login status.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-6.png?raw=true)</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-7.png?raw=true)</br>
+</br>
+
+To logout, the user simply needs to click on the profile icon and select "Logout" from the drop-down menu.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-8.png?raw=true)</br>
+</br>
+
+The user will be asked to confirm that they wish to logout.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-9.png?raw=true)</br>
+</br>
 
 
 
