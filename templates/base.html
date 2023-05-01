@@ -170,7 +170,7 @@
                 <div class="mb-4">
                     <!-- Newsletter Sign Up -->
                     {% if not user.is_authenticated %}
-                        <div class="container-fluid" style="align-items: right;">
+                        <div class="container-fluid">
                             <form action="{% url 'subscribe' %}" method="post">
                                 <div class="col-auto my-2">
                                     <p class="pt-2">Subscribe to our newsletter</p>

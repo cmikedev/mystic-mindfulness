@@ -96,7 +96,8 @@ This section focuses on testing the website from the point of view of the user i
 
 - 5.1 User Story Testing
 - 5.2 Admin / Superuser CRUD Capability Testing
-- 5.3 Code and Responsiveness Testing
+- 5.3 Authentication Testing
+- 5.4 Code and Responsiveness Testing
 </br>
 
 ## 5.1 User Story Testing
@@ -129,7 +130,9 @@ The visitor will then be directed to a registration form. The user needs to choo
 
 ## 5.2 Admin / Superuser CRUD Capability Testing
 
-## 5.3 Code and Responsiveness Testing
+## 5.3 Authentication Testing
+
+## 5.4 Code and Responsiveness Testing
 
 
 W3C HTML:
