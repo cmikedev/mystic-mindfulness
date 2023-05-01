@@ -92,15 +92,14 @@ ____
 
 ## 5. Testing
 
-This section focuses on testing the website from the point of view of the user in line with the user stories utilised in this project's Kanban. The testing is spread across three areas:
+This section focuses on testing the website from the point of view of the user in line with the user stories utilised in this project's Kanban. The testing is spread across three areas, with authentication testing taking place as part of them:
 
 - 5.1 User Story Testing
 - 5.2 Admin / Superuser CRUD Capability Testing
-- 5.3 Authentication Testing
-- 5.4 Code and Responsiveness Testing
+- 5.3 Code and Responsiveness Testing
 </br>
 
-## 5.1 User Story Testing
+### 5.1 User Story Testing
 
 ___
 
@@ -252,6 +251,18 @@ As a Site User I can view a list of products for sale so that I can select one t
 ___
 
 </br>
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-1.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-2.png?raw=true)</br>
+</br>
+
 ___
 
 User Story:
@@ -263,6 +274,13 @@ As a Site User I can open up a product page so that I can view more details.
 ___
 
 </br>
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-4.png?raw=true)</br>
+</br>
+
+
 ___
 
 User Story:
@@ -275,14 +293,41 @@ As a Site User I can leave a review of a product so that other users can decide 
 ___
 
 </br>
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-5.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-6.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-7.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-8.png?raw=true)</br>
+</br>
+
+The review has been overwritten with the user's new review.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-9.png?raw=true)</br>
+</br>
 
 
 
-## 5.2 Admin / Superuser CRUD Capability Testing
+### 5.2 Admin / Superuser CRUD Capability Testing
 
-## 5.3 Authentication Testing
-
-## 5.4 Code and Responsiveness Testing
+### 5.3 Code and Responsiveness Testing
 
 
 W3C HTML:
