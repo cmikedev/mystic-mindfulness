@@ -472,45 +472,70 @@ As a Site User I can view blog entries so that I can learn more about the produc
 ___
 
 </br>
-Text</br>
+Any user, authenticated or not can browse the blog section of the website. A visitor can view a preview of each blog entry and by access the full post by clicking on the image or any of the other two links.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-1.png?raw=true)</br>
 </br>
 
-Text</br>
+Scrolling down, a visitor can view any comments that have been posted. If the visitor isn't authenticated, links to sign-in or register will be displayed.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-2.png?raw=true)</br>
 </br>
 
-Text</br>
+If the visitor is authenticated, links to post a comment will be rendered.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-3.png?raw=true)</br>
 </br>
 
-Text</br>
+Following the link, an authenticated user can post a comment.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-4.png?raw=true)</br>
 </br>
 
-Text</br>
+If an unauthenticated user knows the url of the comment page, they will be redirected back to the sign-in page.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-7.png?raw=true)</br>
 </br>
 
-Text</br>
+Once submitted, the user will be informed that their comment has been posted successfully.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-5.png?raw=true)</br>
 </br>
 
+Browsing back to the page, the user's comment will appear.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-6.png?raw=true)</br>
+</br>
 
 
 ### 5.2 Admin / Superuser CRUD Capability Testing
+</br>
+
+___
+
+User Story:
+
+As a Site User I can view blog entries so that I can learn more about the products on the site.
+* Acceptance Criteria:
+    * User can see a list of blog entries
+    * User can select an entry to view
+    * A verified user can leave a comment
+___
+
+</br>
+
+
+
+
+
+
 
 ### 5.3 Code and Responsiveness Testing
 
