@@ -342,16 +342,40 @@ As a Site User I can select an item to add to my shopping cart so that I can pur
 ___
 
 </br>
-Text</br>
+Once a user, registered and logged in, or a guest, finds a product that they are interested in puchasing, they can add it to their cart using the plus and minus buttons to decide on the quantity.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-1.png?raw=true)</br>
 </br>
 
 The cart icon has been assigned a Bootstrap 5 class to bring the user's attention to the fact that there are items in it. The user will also receive a notification message showing what has been added to the cart, the price and how much more they will need to spend in order to be eligible for free shipping.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-2.png?raw=true)</br>
+</br>
+
+If the user clicks on the cart icon, they will be brought to their shopping cart. Here they will be shown what they have purchased, the quantity, price, the total price, the shipping cost and how much more they will need to spend in order to receive free shipping. We can change our mind and decide we no longer wish to purchase the Amethyst Dragon's Egg. By clicking on "remove" the item will be deleted from the cart.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-3.png?raw=true)</br>
+</br>
+
+As there was only one item in the cart, the cart is now completely empty.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-4.png?raw=true)</br>
+</br>
+
+Another item has been added. Once in the cart, a user may decide to increase the quantity. Here, one item was added but once in the cart the quantity was increased to 3.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-5.png?raw=true)</br>
+</br>
+
+In order to make the change in quantity take effect, the user must click on "update". Once done, the bag total and shipping cost change to reflect the change in quantity.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-6.png?raw=true)</br>
 </br>
 
 ___
