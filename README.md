@@ -522,13 +522,71 @@ ___
 
 User Story:
 
-As a Site User I can view blog entries so that I can learn more about the products on the site.
+As a Superuser I can add a product to the main product page so that the inventory is kept up to date.
 * Acceptance Criteria:
-    * User can see a list of blog entries
-    * User can select an entry to view
-    * A verified user can leave a comment
+    * An authenticated user can access a page to upload a product
+    * All uploads are done at the front-end
+    * The authenticated user is presented with additional options when logged in than regular users ie - an 'add product button'
+    * User is notified that the product has been successfully added
 ___
 
+</br>
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+___
+
+User Story:
+
+As a Superuser I can edit a product so that I can correct any errors or make changes to the details.
+* Acceptance Criteria:
+    * Authenticated user can edit a products details
+    * User is notified of the changes that are made
+___
+
+</br>
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+___
+
+User Story:
+
+As a Superuser I can delete a product so that I can keep the inventory up to date.
+* Acceptance Criteria:
+    * Authenticated user can select a product to delete
+    * Once deleted, user is redirected
+___
+
+</br>
+Text</br>
+</br>
+
+![image]()</br>
 </br>
 
 
