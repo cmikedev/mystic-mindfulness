@@ -384,7 +384,11 @@ Once happy with the order the user can navigate to the checkout and fill out the
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-7.png?raw=true)</br>
 </br>
 
-A guest can do the same, however the option to select save the delivery information will only render for an authenticated user.
+A guest can do the same, however the option to select save the delivery information will only render for an authenticated user.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-16.png?raw=true)</br>
+</br>
 
 As shown, the Stripe form will automatically render an error message if the user inputs an incorrect credit card number.</br>
 </br>
@@ -412,7 +416,11 @@ An email confirmation containing details of the user's order is sent to the emai
 
 Navigating to their profile, a user can see all of their past orders and their current information.
 
-A user must be logged in to view this. If an unregistered user knows the url they will autiomatically be redirected to the sign-in page.
+A user must be logged in to view this. If an unregistered user knows the url they will autiomatically be redirected to the sign-in page.</br>
+<br/>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-17.png?raw=true)</br>
+</br>
 
 Here, we've changed the City/Town to "middle earth".</br>
 </br>
