@@ -378,6 +378,20 @@ In order to make the change in quantity take effect, the user must click on "upd
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-6.png?raw=true)</br>
 </br>
 
+___
+
+User Story:
+
+As a Site User I can use the integrated Strype button so that I can purchase products.
+* Acceptance Criteria:
+    * User can add details at checkout
+    * User can pay for the product using a credit card
+    * User can see the items they are ordering
+    * User receives a confirmation email containing their order details
+___
+
+</br>
+
 Once happy with the order the user can navigate to the checkout and fill out their details.</br>
 </br>
 
@@ -434,7 +448,7 @@ Clicking "Update Information" saves the changes. The user is notified of the sam
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-13.png?raw=true)</br>
 </br>
 
-Some more items have been added to the cart and navigating to the checkout we can see that the change made to the town has been carried over.</br>
+To check that the changes are also reflected in the checkout form, some more items have been added to the cart and navigating to the checkout we can see that the change made to the town has been carried over.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-14.png?raw=true)</br>
@@ -450,15 +464,44 @@ ___
 
 User Story:
 
-As a Site User I can use the integrated Strype button so that I can purchase products.
+As a Site User I can view blog entries so that I can learn more about the products on the site.
 * Acceptance Criteria:
-    * User can add details at checkout
-    * User can pay for the product using a credit card
-    * User can see the items they are ordering
-    * User receives a confirmation email containing their order details
+    * User can see a list of blog entries
+    * User can select an entry to view
+    * A verified user can leave a comment
 ___
 
 </br>
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
 Text</br>
 </br>
 
