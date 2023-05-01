@@ -142,15 +142,44 @@ Subscribing does not create an account for the user (and no cookie is created) s
 Switching to the site admin account, the login status changes from "Guest" to "admin" and the administrator is able to access a drop-down menu which with a link to create the newsletter.
 </br></br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-4.png?raw=true)</br>
 </br>
 
-An unregistered site visitor or a registered and signed-in user without the correct permissions cannot is not shown these options nor can they access the newsletter creation page even if they know the link at [https://mystic-mindfulness.herokuapp.com/newsletter](https://mystic-mindfulness.herokuapp.com/newsletter).
+An unregistered site visitor or a registered and signed-in user without the correct permissions is not shown these options nor can they access the newsletter creation page even if they know the link at [https://mystic-mindfulness.herokuapp.com/newsletter](https://mystic-mindfulness.herokuapp.com/newsletter).
 
 </br></br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-9.png?raw=true)</br>
 </br>
+
+On the newsletter creation page, the "Receivers" field, which is editable, comes pre-populated with all visitors who subscribed to the newsletter. Once the administrator has drafted the letter and clicks send, it will automatically go to all emails in the "Receivers" field.
+</br></br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-5.png?raw=true)</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-6.png?raw=true)</br>
+</br>
+
+Finally, we can see that the test newsletter has arrived in our test user's inbox.
+</br></br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-7.png?raw=true)</br>
+</br>
+
+___
+
+User Story:
+
+As a Site User I can sign up to a newsletter so that I can receive correspondence from the site.
+* Acceptance Criteria:
+    * Unauthenticated user can sign-up to a newsletter
+    * Sign-up is not displayed for logged-in users
+___
+
+
+
+
 
 
 
