@@ -171,12 +171,16 @@ ___
 
 User Story:
 
-As a Site User I can sign up to a newsletter so that I can receive correspondence from the site.
+As a Site User I can register an account so that I can add items to my cart.
 * Acceptance Criteria:
-    * Unauthenticated user can sign-up to a newsletter
-    * Sign-up is not displayed for logged-in users
+    * User can register an account
+    * User can login
+    * User is made aware of their login status
+    * User can logout
+    * User is made aware of their logout status
 ___
 
+</br>
 
 
 
