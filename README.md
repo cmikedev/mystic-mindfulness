@@ -531,28 +531,28 @@ As a Superuser I can add a product to the main product page so that the inventor
 ___
 
 </br>
-Text</br>
+A Superuser can access the Product Management section from the drop-down that appears by clicking on the profile icon.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-1.png?raw=true)</br>
 </br>
 
-Text</br>
+If an unauthenticated user knows the url of the comment page, they will be redirected back to the sign-in page.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-2.png?raw=true)</br>
 </br>
 
-Text</br>
+The Superuser will be directed to a form which allows them to upload a product, selecting the category, name, description, price and if required, an image.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-3.png?raw=true)</br>
 </br>
 
-Text</br>
+Once all required fields have been filled out, the Superuser selects "Add Product". If the addition is successful, the Superuser will be redirected to the product detail page and a success message will be displayed.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-4.png?raw=true)</br>
 </br>
 
 ___
@@ -569,7 +569,25 @@ ___
 Text</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-1.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-2.png?raw=true)</br>
+</br>
+
+If an unauthenticated user knows the url of the comment page, they will be redirected back to the sign-in page.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-3.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-4.png?raw=true)</br>
 </br>
 
 ___
@@ -586,7 +604,13 @@ ___
 Text</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-product-test-1.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-product-test-2.png?raw=true)</br>
 </br>
 
 
