@@ -331,6 +331,48 @@ If the user then logs out and returns to the page, their review will be visible 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-10.png?raw=true)</br>
 </br>
 
+___
+
+User Story:
+
+As a Site User I can select an item to add to my shopping cart so that I can purchase the product now or later.
+* Acceptance Criteria:
+    * User can select a product and add it to their cart
+    * User can edit their cart
+___
+
+</br>
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+The cart icon has been assigned a Bootstrap 5 class to bring the user's attention to the fact that there are items in it. The user will also receive a notification message showing what has been added to the cart, the price and how much more they will need to spend in order to be eligible for free shipping.</br>
+</br>
+
+![image]()</br>
+</br>
+
+___
+
+User Story:
+
+As a Site User I can use the integrated Strype button so that I can purchase products.
+* Acceptance Criteria:
+    * User can add details at checkout
+    * User can pay for the product using a credit card
+    * User can see the items they are ordering
+    * User receives a confirmation email containing their order details
+___
+
+</br>
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
 
 
 ### 5.2 Admin / Superuser CRUD Capability Testing
