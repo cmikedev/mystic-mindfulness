@@ -251,13 +251,13 @@ As a Site User I can view a list of products for sale so that I can select one t
 ___
 
 </br>
-Text</br>
+Regardless of their login status, a visitor has several pathways to the product page from the home page. Shown below, the user has selected "All Products" from the header menu which allows them to view all products sorted by price, category or alphabetically.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-1.png?raw=true)</br>
 </br>
 
-Text</br>
+The user is then brought to the main products page. Their choice which in this case is "All Crystals", the number of products and the current sorting is visible to the user.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-2.png?raw=true)</br>
@@ -274,7 +274,7 @@ As a Site User I can open up a product page so that I can view more details.
 ___
 
 </br>
-Text</br>
+The user can then click on any product they wish (in this case, Green Calcite) and they will be redirected to a page showing the product's details including its rating (if any), price and detailed description.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-3.png?raw=true)</br>
@@ -292,31 +292,28 @@ As a Site User I can leave a review of a product so that other users can decide 
 ___
 
 </br>
-Text</br>
+A product's rating is based off the average of the rating's given by authenticated users. If a user is authenticated, the form shown below, along with any posted reviews, will render on the page of the product they are viewing. In this instance, no reviews have been posted yet. The rating default is set at 3 out of 5.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-4.png?raw=true)</br>
 </br>
 
-Text</br>
+Here, our user is already familiar with this product and so has decided to leave a rating.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-5.png?raw=true)</br>
 </br>
 
-Text</br>
+Their rating of 5 now appears with the rest of the product's details.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-6.png?raw=true)</br>
 </br>
 
-Text</br>
+On reflection, the user has now decided that the rating is a little high and so wants to reduce it to 4. As long as they are signed in, the form will render and they can simply leave another review. This will overwrite their previous review.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-7.png?raw=true)</br>
-</br>
-
-Text</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/products-test-8.png?raw=true)</br>
