@@ -17,16 +17,32 @@ ____
 ## 2. Business Case
 
 Mystic Mindfulness is a business-to-customer (B2C) ecommerce website selling healing crystals directly to online consumers. The site specializes in the main three types of healing crystals; Amethyst, Calcite and Quartz.
+</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/amiresponsive-light.png?raw=true)</br>
+</br>
+
+Image created using [Am I Responsive?](https://ui.dev/amiresponsive)
+</br></br>
 
 ### 2.1 Marketing Strategy
 
-Socia media
+Social media
 
 #### Search Engines
 
 #### Facebook Business Page
 
 The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100092204265600). Please note that Facebook does not allow business pages to remain in perpetuity and the aforementioned link may be made inactive at any time. Should that occur at time of reading, the below screenshots have been provided to illustrate the active Mystic Mindfulness Facebook business page.
+</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/facebook-top.png?raw=true)</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/facebook-bottom.png?raw=true)</br>
+</br>
 
 #### The Blog
 
@@ -35,14 +51,85 @@ The Mystic Mindfulness website contains a blog with posts written by the site ad
 ____
 </br>
 
+## 3. Planning
 
-## 3. Design
+The goal of the Mystic Mindfulness ecommerce site is to provide the potential customer with a clear, intuitive interface which allows them to immediately understand the services being offered, navigate easily through the various pages, sign-up for a newsletter, interact via comments and reviews and ultimately make a purchase. To achieve this, Agile methodology was used within the planning and design process. Github's Kanban board was implemented to design and track user stories which were vital in developing a user-focused experience:
 
-Font-Family used was Bilbo. LOTR is a recognisable cultural reference and reinforces mystical/fantastical element of the site. Hope is that the font will create that connection in users head.
+1. As a Site User I can register an account so that I can add items to my cart
+2. As a Site User I can view a list of products for sale so that I can select one to view
+3. As a Site User I can open up a product page so that I can view more details
+4. As a Site User I can leave a review of a product so that other users can decide whether to buy or not
+5. As a Site User I can select an item to add to my shopping cart so that I can purchase the product now or later
+6. As a Site User I can use the integrated Strype button so that I can purchase products
+7. As a Superuser I can add a product to the main product page so that the inventory is kept up to date
+8. As a Superuser I can edit a product so that I can correct any errors or make changes to the details
+9. As a Superuser I can delete a product so that I can keep the inventory up to date
+10. As a Site User I can sign up to a newsletter so that I can receive correspondence from the site
+11. As a Superuser I can create a blog post so that site users can learn more about the products and their uses
+12. As a Superuser I can edit or delete a post so that I can correct any errors or remove a post entirely
+13. As a Site User I can view blog entries relating so that I can learn more about the products on the site
+
+The completed Kanban Board can be found [here](https://github.com/users/cmikedev/projects/9).
+
+____
+</br>
+
+
+
+## 4. Design
+
+Font-Family used was Bilbo. LOTR is a recognisable cultural reference and reinforces the mystical/fantastical element of the site. The expectation is that the font will create that connection in users head.
 
 Design - background to be somewhat ethereal/cosmic. 
 
 Large use of white colours to denote health, emptiness, clean-living. No clutter.
+
+
+____
+</br>
+
+
+
+## 5. Testing
+
+This section focuses on testing the website from the point of view of the user in line with the user stories utilised in this project's Kanban. The testing is spread across three areas:
+
+- 5.1 User Story Testing
+- 5.2 Admin / Superuser CRUD Capability Testing
+- 5.3 Code and Responsiveness Testing
+</br>
+
+## 5.1 User Story Testing
+
+___
+
+User Story:
+
+As a Site User I can register an account so that add items to my cart.
+* Acceptance Criteria:
+    * User can register an account
+    * User can login
+    * User is made aware of their login status
+    * User can logout
+    * User is made aware of their logout status
+___
+
+</br>
+A site visitor can click on the "Register" button on the navbar.</br>
+</br>
+
+![image](https://github.com/cmikedev/ecommerce/blob/main/manual_testing/images/user_stories/1%20-%20registration.png?raw=true)</br>
+</br>
+
+The visitor will then be directed to a registration form. The user needs to choose a name and a password and press "Submit".</br>
+</br>
+
+![image](https://github.com/cmikedev/ecommerce/blob/main/manual_testing/images/user_stories/2%20-%20registration.png?raw=true)</br>
+</br>
+
+## 5.2 Admin / Superuser CRUD Capability Testing
+
+## 5.3 Code and Responsiveness Testing
 
 
 W3C HTML:
