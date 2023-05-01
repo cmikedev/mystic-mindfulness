@@ -196,7 +196,7 @@ The user needs to fill in their details and select Sign Up</br>
 If the user already exists or if a required field has not been filled out, the form will not be submitted and the user will be notified of the problem.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-11.png?raw=true)</br>
 </br>
 
 Once their details have been entered correctly and the form submitted, the user will be informed that an email requiring confirmation has been sent to the email address that they provided.</br>
@@ -239,6 +239,41 @@ Again, the user will be made aware of their login status.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-10.png?raw=true)</br>
+</br>
+
+___
+
+User Story:
+
+As a Site User I can view a list of products for sale so that I can select one to view.
+* Acceptance Criteria:
+    * User can view and browse all available products
+    * User can select a product and view further details
+___
+
+</br>
+___
+
+User Story:
+
+As a Site User I can open up a product page so that I can view more details.
+* Acceptance Criteria:
+    * User can select a product and be directed to a details page
+    * User is presented with expanded details of the product on a dedicated page
+___
+
+</br>
+___
+
+User Story:
+
+As a Site User I can leave a review of a product so that other users can decide whether to buy or not.
+* Acceptance Criteria:
+    * User can select a rating for a product
+    * User can leave a review of the product
+    * User can update their review
+___
+
 </br>
 
 
