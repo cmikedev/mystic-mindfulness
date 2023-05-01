@@ -181,6 +181,11 @@ As a Site User I can register an account so that I can add items to my cart.
 ___
 
 </br>
+If an unauthenticated site-visitor navigates to the page footer, they will be presented with a form to sign-up to the Mystic Mindfulness newsletter. Note that the visitor's login status is shown as "Guest".</br>
+</br>
+
+![image]()</br>
+</br>
 
 
 
