@@ -235,6 +235,12 @@ The user will be asked to confirm that they wish to logout.</br>
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-9.png?raw=true)</br>
 </br>
 
+Again, the user will be made aware of their login status.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/registration-test-10.png?raw=true)</br>
+</br>
+
 
 
 ## 5.2 Admin / Superuser CRUD Capability Testing
