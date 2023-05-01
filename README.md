@@ -378,6 +378,66 @@ In order to make the change in quantity take effect, the user must click on "upd
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-6.png?raw=true)</br>
 </br>
 
+Once happy with the order the user can navigate to the checkout and fill out their details.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-7.png?raw=true)</br>
+</br>
+
+A guest can do the same, however the option to select save the delivery information will only render for an authenticated user.
+
+As shown, the Stripe form will automatically render an error message if the user inputs an incorrect credit card number.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-8.png?raw=true)</br>
+</br>
+
+Once a correct number has been entered, the user can proceed with the payment.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-9.png?raw=true)</br>
+</br>
+
+By electing to complete the order, an order is generated, the user is provided with a reference number, the details of their order, confirmation by way of email and their cart is cleared.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-10.png?raw=true)</br>
+</br>
+
+An email confirmation containing details of the user's order is sent to the email that they provided when they registered.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-11.png?raw=true)</br>
+</br>
+
+Navigating to their profile, a user can see all of their past orders and their current information.
+
+A user must be logged in to view this. If an unregistered user knows the url they will autiomatically be redirected to the sign-in page.
+
+Here, we've changed the City/Town to "middle earth".</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-12.png?raw=true)</br>
+</br>
+
+Clicking "Update Information" saves the changes. The user is notified of the same.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-13.png?raw=true)</br>
+</br>
+
+Some more items have been added to the cart and navigating to the checkout we can see that the change made to the town has been carried over.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-14.png?raw=true)</br>
+</br>
+
+Going to the Mystic Mindfulness Stripe account we can see that the payment from user pp5-test was successful.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/purchase-test-15.png?raw=true)</br>
+</br>
+
 ___
 
 User Story:
