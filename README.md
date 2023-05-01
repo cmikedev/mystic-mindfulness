@@ -113,16 +113,19 @@ As a Site User I can sign up to a newsletter so that I can receive correspondenc
 ___
 
 </br>
-A site visitor can click on the "Register" button on the navbar.</br>
+If an unauthenticated site-visitor navigates to the page footer, they will be presented with a form to sign-up to the Mystic Mindfulness newsletter. Clicking "subscribe" will add the users email to the "SubscribedUsers" model. The form will not appear for users who are already logged in.</br>
 </br>
 
-![image](https://github.com/cmikedev/ecommerce/blob/main/manual_testing/images/user_stories/1%20-%20registration.png?raw=true)</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-1.png?raw=true)</br>
 </br>
 
-The visitor will then be directed to a registration form. The user needs to choose a name and a password and press "Submit".</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-8.png?raw=true)</br>
 </br>
 
-![image](https://github.com/cmikedev/ecommerce/blob/main/manual_testing/images/user_stories/2%20-%20registration.png?raw=true)</br>
+A visitor who either doesn't have an account or has but has yet to sign-in but has already subscribed to the newsletter will not be able to subscribe again as their email will already be in the "SubscribedUsers" model.</br>
+</br>
+
+![image]()</br>
 </br>
 
 ## 5.2 Admin / Superuser CRUD Capability Testing
