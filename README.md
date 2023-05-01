@@ -113,20 +113,46 @@ As a Site User I can sign up to a newsletter so that I can receive correspondenc
 ___
 
 </br>
-If an unauthenticated site-visitor navigates to the page footer, they will be presented with a form to sign-up to the Mystic Mindfulness newsletter. Clicking "subscribe" will add the users email to the "SubscribedUsers" model. The form will not appear for users who are already logged in.</br>
+If an unauthenticated site-visitor navigates to the page footer, they will be presented with a form to sign-up to the Mystic Mindfulness newsletter. Note that the visitor's login status is shown as "Guest".</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-1.png?raw=true)</br>
 </br>
 
+Clicking "subscribe" will add the users email to the "SubscribedUsers" model. 
+</br></br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-2.png?raw=true)</br>
+</br>
+
+The form will not appear for users who are already logged in. 
+</br></br>
+
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-8.png?raw=true)</br>
 </br>
 
-A visitor who either doesn't have an account or has but has yet to sign-in but has already subscribed to the newsletter will not be able to subscribe again as their email will already be in the "SubscribedUsers" model.</br>
+A visitor who either doesn't have an account or has but has yet to sign-in but has already subscribed to the newsletter will not be able to subscribe again as their email will already be in the "SubscribedUsers" model.
+
+Subscribing does not create an account for the user (and no cookie is created) so the newsletter subscription form will still appear but the user will not be able to re-subscribe using the same details. 
+</br></br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/newsletter-test-3.png?raw=true)</br>
 </br>
+
+Switching to the site admin account, the login status changes from "Guest" to "admin" and the administrator is able to access a drop-down menu which with a link to create the newsletter.
+</br></br>
 
 ![image]()</br>
 </br>
+
+An unregistered site visitor or a registered and signed-in user without the correct permissions cannot is not shown these options nor can they access the newsletter creation page even if they know the link at [https://mystic-mindfulness.herokuapp.com/newsletter](https://mystic-mindfulness.herokuapp.com/newsletter).
+
+</br></br>
+
+![image]()</br>
+</br>
+
+
 
 ## 5.2 Admin / Superuser CRUD Capability Testing
 
