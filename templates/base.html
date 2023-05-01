@@ -170,7 +170,7 @@
                 <div class="mb-4">
                     <!-- Newsletter Sign Up -->
                     {% if not user.is_authenticated %}
-                        <section class="container-fluid" style="align-items: right;">
+                        <div class="container-fluid" style="align-items: right;">
                             <form action="{% url 'subscribe' %}" method="post">
                                 <div class="col-auto my-2">
                                     <p class="pt-2">Subscribe to our newsletter</p>
@@ -178,11 +178,11 @@
                                 <div class="row justify-content-center" style="display: inline-flex;">
                                 {% csrf_token %}
                                     <div class="col-auto my-2">
-                                        <input id="name" name="name" class="form-control" placeholder="Your Name"/>
+                                        <input id="name" name="name" class="form-control" placeholder="Your Name">
                                     </div>
             
                                     <div class="col-auto my-2">
-                                        <input id="email" name="email" type="email" class="form-control" placeholder="Email address"/>
+                                        <input id="email" name="email" type="email" class="form-control" placeholder="Email address">
                                     </div>
                                 </div>
                                 <div class="col-auto my-2">
@@ -191,7 +191,7 @@
                                     </button>
                                 </div>
                             </form>
-                        </section>
+                        </div>
                         <br>
                     {% endif %}
 

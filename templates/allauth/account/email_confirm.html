@@ -7,6 +7,7 @@
 
 
 {% block inner_content %}
+<br><br><br>
 <hr>
 <h2 class="logo-font mb-4" style="font-family: Bilbo;">{% trans "Confirm E-mail Address" %}</h2>
 <hr>
@@ -21,6 +22,7 @@
 {% csrf_token %}
     <button type="submit">{% trans 'Confirm' %}</button>
 </form>
+<br><br>
 
 {% else %}
 
