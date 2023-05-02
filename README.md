@@ -100,6 +100,7 @@ This section focuses on testing the website from the point of view of the user i
 </br>
 
 ### 5.1 User Story Testing
+</br>
 
 ___
 
@@ -514,9 +515,11 @@ Browsing back to the page, the user's comment will appear.</br>
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-6.png?raw=true)</br>
 </br>
 
-
+</br>
 ### 5.2 Admin / Superuser CRUD Capability Testing
 </br>
+
+A Superuser has different rights than a regular user. In addition, when a Superuser signs in to their account, different options in the form of a drop-down from their profile icon and edit/delete links on the Product and Blog pages will be rendered.</br>
 
 ___
 
@@ -566,13 +569,13 @@ As a Superuser I can edit a product so that I can correct any errors or make cha
 ___
 
 </br>
-Text</br>
+If a Superuser has logged into their account, "Edit Product" and "Delete Product" links will render on both the main Product and Product Detail pages. </br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-1.png?raw=true)</br>
 </br>
 
-Text</br>
+Clicking the "Edit Product" link will allow the Superuser to access a form which overwrites the current details recorded for the selected product including the photo. Here, the price has been changed.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-2.png?raw=true)</br>
@@ -584,7 +587,7 @@ If an unauthenticated user knows the url of the edit product page and tries to a
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-3.png?raw=true)</br>
 </br>
 
-Text</br>
+Once submitted, the Superuser is directed back to the page of the product they were viewing. A message confirming that the changes were successful renders and the price has also changed.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-4.png?raw=true)</br>
@@ -624,7 +627,7 @@ As a Superuser I can create a blog post so that site users can learn more about 
 ___
 
 </br>
-Text</br>
+When signed into their account, a Superuser can add a blog post by selecting "Blog Management" from the drop-down which renders when they click on the profile icon. This will bring the Superuser to a page where they can add a blog entry.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-1.png?raw=true)</br>
@@ -636,19 +639,19 @@ If an unauthenticated user knows the url of the add a blog post page and tries t
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-2.png?raw=true)</br>
 </br>
 
-Text</br>
+The Superuser can create an entry by filling out the form. The photo is optional. Here, we won't select one and a default image should render. To submit the form the Superuser selects the "Add Post" button.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-3.png?raw=true)</br>
 </br>
 
-Text</br>
+Once submitted, the Superuser is redirected to the post entry. The default image has rendered in place of a selected image.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-4.png?raw=true)</br>
 </br>
 
-Text</br>
+When the Superuser navigates back to the Blog page they will see their post appear.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-5.png?raw=true)</br>
@@ -664,7 +667,7 @@ As a Superuser I can edit or delete a post so that I can correct any errors or r
 ___
 
 </br>
-Text</br>
+To edit the post that was just created, the Superuser selects the "Edit Post" link which renders when they are signed into their account.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-1.png?raw=true)</br>
@@ -676,19 +679,19 @@ If an unauthenticated user knows the url of the edit blog post page and tries to
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-2.png?raw=true)</br>
 </br>
 
-Text</br>
+The Superuser will be redirected to a form which allows them to edit the blog post. Here, a photo is added. Clicking the "Edit Post" button will submit the changes.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-3.png?raw=true)</br>
 </br>
 
-Text</br>
+The Superuser will be redirected back to the Blog page and a message informing them that the edit was successful will render.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-4.png?raw=true)</br>
 </br>
 
-Text</br>
+To delete the test entry, the Superuser selects the "Delete Post" link. This will direct the Superuser to a page where they will be asked to confirm that the post should be deleted.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-1.png?raw=true)</br>
@@ -700,25 +703,21 @@ If an unauthenticated user knows the url of the delete a blog post page and trie
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-2.png?raw=true)</br>
 </br>
 
-Text</br>
+Clicking "Delete" confirms that the Superuser wants the post deleted.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-3.png?raw=true)</br>
 </br>
 
-Text</br>
+The Superuser is then redirected back to the main Blog page. The entry has been deleted and no longer appears on the Blog page.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-4.png?raw=true)</br>
 </br>
 
-
-
-
-
-
-
+</br>
 ### 5.3 Code and Responsiveness Testing
+</br>
 
 
 W3C HTML:
