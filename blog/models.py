@@ -23,13 +23,6 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('blog')
 
-    def get_image(self):
-        try:
-            url = self.image.url
-        except:
-            url = '/media/noimage.png'
-        return url
-
 
 class Comment(models.Model):
     post = models.ForeignKey(

@@ -25,14 +25,5 @@
             </form>
         </div>
         <br><br><br>
-    {% else %}
-        <br>
-        <h1 style="font-family: Bilbo;">Oops...</h1>
-        <br>
-        <p>You are not authorised to view this page. If you think that you are seeing this
-            message in error please contact the site Administrator.
-        </p>
-        <br>
-        <a class="btn btn-outline-secondary" href="{% url 'blog' %}" aria-label="Return to Blog">Back</a>
     {% endif %}
 {% endblock %}
