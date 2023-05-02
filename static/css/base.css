@@ -1,9 +1,14 @@
+.bag-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* hero-sections from https://dev.to/themodernweb/how-to-make-an-e-commerce-website-with-html-css-and-js-3aon */
+
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
-    /*background: url('/media/background.jpeg') no-repeat center center fixed;*/
     background: url('/media/main-background.jpeg') no-repeat center center fixed;
-    /*background: url('https://images.pexels.com/photos/1816819/pexels-photo-1816819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center fixed;*/
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -25,12 +30,7 @@
     font-weight: 300;
 }
 
-.bag-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Collections */
+/* Collections - from https://dev.to/themodernweb/how-to-make-an-e-commerce-website-with-html-css-and-js-3aon */
 
 
 .collection-container{
@@ -76,8 +76,6 @@
 /* Other */
 
 #front-image {
-    /*background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;*/
-    /*background: url('/media/background.jpeg') no-repeat center center fixed;*/
     background-size: cover;
     height: calc(100vh - 164px);
 }
@@ -120,10 +118,6 @@
     .blog-preview-btn {
         font-size: 75%;
     }
-
-    .subscribe {
-        size-adjust: 50%;
-    }
 }
     
 
@@ -135,7 +129,6 @@ html {
 }
 
 body {
-    /*background: url('https://images-prod.dazeddigital.com/870/azure/dazed-prod/1250/2/1252255.jpg') no-repeat center center fixed;*/
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
