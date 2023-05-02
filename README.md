@@ -496,7 +496,7 @@ Following the link, an authenticated user can post a comment.</br>
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-4.png?raw=true)</br>
 </br>
 
-If an unauthenticated user knows the url of the comment page, they will be redirected back to the sign-in page.</br>
+If an unauthenticated user knows the url of the comment page and tries to access it, they will be redirected back to the sign-in page.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-test-7.png?raw=true)</br>
@@ -537,7 +537,7 @@ A Superuser can access the Product Management section from the drop-down that ap
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-1.png?raw=true)</br>
 </br>
 
-If an unauthenticated user knows the url of the comment page, they will be redirected back to the sign-in page.</br>
+If an unauthenticated user knows the url of the Product Management page and tries to access it, they will be redirected back to the sign-in page.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-2.png?raw=true)</br>
@@ -578,7 +578,7 @@ Text</br>
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-2.png?raw=true)</br>
 </br>
 
-If an unauthenticated user knows the url of the comment page, they will be redirected back to the sign-in page.</br>
+If an unauthenticated user knows the url of the edit product page and tries to access it, they will be redirected back to the sign-in page.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-3.png?raw=true)</br>
@@ -611,6 +611,63 @@ Text</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-product-test-2.png?raw=true)</br>
+</br>
+
+___
+
+User Story:
+
+As a Superuser I can create a blog post so that site users can learn more about the products and their uses.
+* Acceptance Criteria:
+    * Authenticated user can add a blog post
+    * User is notified that the post has been added
+___
+
+</br>
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+If an unauthenticated user knows the url of the add a blog post page and tries to access it, they will be redirected back to the sign-in page.</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+___
+
+User Story:
+
+As a Superuser I can edit or delete a post so that I can correct any errors or remove a post entirely.
+* Acceptance Criteria:
+    * Authenticated user can edit a blog post or delete it entirely
+___
+
+</br>
+Text</br>
+</br>
+
+![image]()</br>
+</br>
+
+Text</br>
+</br>
+
+![image]()</br>
 </br>
 
 
