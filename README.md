@@ -627,25 +627,31 @@ ___
 Text</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-1.png?raw=true)</br>
 </br>
 
 If an unauthenticated user knows the url of the add a blog post page and tries to access it, they will be redirected back to the sign-in page.</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-2.png?raw=true)</br>
 </br>
 
 Text</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-3.png?raw=true)</br>
 </br>
 
 Text</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-4.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-5.png?raw=true)</br>
 </br>
 
 ___
@@ -661,13 +667,49 @@ ___
 Text</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-1.png?raw=true)</br>
+</br>
+
+If an unauthenticated user knows the url of the edit blog post page and tries to access it, they will be redirected back to the sign-in page.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-2.png?raw=true)</br>
 </br>
 
 Text</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-3.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-4.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-1.png?raw=true)</br>
+</br>
+
+If an unauthenticated user knows the url of the delete a blog post page and tries to access it, they will be redirected back to the sign-in page.</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-2.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-3.png?raw=true)</br>
+</br>
+
+Text</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/delete-blog-test-4.png?raw=true)</br>
 </br>
 
 
