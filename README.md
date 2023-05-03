@@ -755,6 +755,14 @@ W3C HTML:
 Form error - thinks there's 2 id's but the widget replaces the old image with the new. So the old image is given an id and the new image's actual id is put in instead. When converted to HTML on the page it looks like there's 2 id's included.
 
 
+# Errors
+
+# Unfixed Errors
+
+Leaving the class names the same on each template meant that when the item was removed, an error was raised in the terminal whereby the item id came back as undefined. The item was successfully deleted however.
+
+Making the class names different in each of the templates and the JavaScript fixed the server error. However, when the user hovers their cursor over the "Remove" link it changes to a "caret" cursor which means that the user would likely mistake the "Remove" link for a piece of text rather than a link. This remains unfixed at the moment.
+
 # Other
 
 
