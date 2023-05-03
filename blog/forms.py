@@ -12,7 +12,7 @@ class PostForm(forms.ModelForm):
     image = forms.ImageField(
         label='Image',
         required=False,
-        widget=CustomClearableFileInput
+        #widget=CustomClearableFileInput
         )
 
     def __init__(self, *args, **kwargs):
