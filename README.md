@@ -14,7 +14,7 @@ The GitHub repository can be found [here](https://github.com/cmikedev/mystic-min
 ____
 </br>
 
-## 2. Business Case
+## 2. Business Rationale
 
 Mystic Mindfulness is a business-to-customer (B2C) ecommerce website selling healing crystals directly to online consumers. The site specializes in the main three types of healing crystals; Amethyst, Calcite and Quartz.
 </br>
@@ -716,13 +716,46 @@ The Superuser is then redirected back to the main Blog page. The entry has been 
 </br>
 
 </br>
+
 ### 5.3 Code and Responsiveness Testing
+
 </br>
+
+## CSS
+
+The main project CSS and CSS where present in each app was tested using W3C's ![CSS Validation Service.](https://jigsaw.w3.org/css-validator/#validate_by_input) In all instances, the CSS was validated by direct input. No warnings or errors were returned.
+
+## JavaScript
+
+All pieces of JavaScript were tested using the ![JSHint](https://jshint.com/) validator tool. No errors were returned. 
+
+## Python
+
+The Python Code used throughout the project was tested using Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#). Where required, the code has been reformatted to remove empty spaces or reduce line length. There are no errors being returned.
+
+## HTML
+
+All of the HTML was tested using W3C's ![Markup Validation Service](https://validator.w3.org/#validate_by_input). The HTML was validated by direct input by viewing each page source and pasting the code into the validator. This prevented errors being returned which would have been the result of Django syntax being present had the HTML been copied directly from the development environment.
+
+The HTML passed validation with no errors being returned. However, there were a number of warnings:
+
+The Mystic Mindfulness ![homepage](https://mystic-mindfulness.herokuapp.com/) returns four "Empty heading". The first warning relates to a h4 element that is initially empty but is populated with a random quote on page load. This h4 element is contained in the base.html file in the project template's folder and so this warning will be returned on every html page that extends the base.html.
+
+The next three are h6 elements that contain Font-Awesome icons.
+</br>
+
+![image]()</br>
+</br>
+
+
 
 
 W3C HTML:
 
 Form error - thinks there's 2 id's but the widget replaces the old image with the new. So the old image is given an id and the new image's actual id is put in instead. When converted to HTML on the page it looks like there's 2 id's included.
+
+
+# Other
 
 
 Meta keywords ![Wordtracker](https://www.wordtracker.com/search)
