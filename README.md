@@ -760,7 +760,19 @@ Form error - thinks there's 2 id's but the widget replaces the old image with th
 
 ### Bugs - Fixed
 
+#### Python Bare Except Error
 
+The "Post" model in the blog app contained a function with a Try/Except statement which would attempt to call the image contained within the model or, if none existed, call a default. A "bare except" error was discovered when the code was put through Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#).
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-models-pyerror.png?raw=true)</br>
+</br>
+
+In actuality this function was already redundant as although its purpose was to call a default image when the user was adding/updating a post image using the form, an If statement in the blog page html already handled an image not being included.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-models-pyerror-fix.png?raw=true)</br>
+</br>
 
 
 ### Bugs - Unfixed
