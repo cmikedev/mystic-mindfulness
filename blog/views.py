@@ -59,7 +59,6 @@ class UpdatePostView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
 class DeletePostView(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     model = Post
-    success_message = 'Post has been deleted!'
     template_name = 'blog/delete_post.html'
     success_url = reverse_lazy('blog')
 

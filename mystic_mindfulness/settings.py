@@ -18,8 +18,6 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-#import cloudinary
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,7 +29,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = False
 
 ALLOWED_HOSTS = ['mystic-mindfulness.herokuapp.com', 'localhost']
@@ -115,7 +112,6 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -183,13 +179,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#DEFAULT_MEDIA_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 if 'USE_AWS' in os.environ:
     # Cache control
@@ -199,7 +193,6 @@ if 'USE_AWS' in os.environ:
     }
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'mystic-mindfulness'
-    #AWS_S3_REGION_NAME = 'EU (Ireland) eu-west-1'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
