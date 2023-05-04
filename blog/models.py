@@ -17,9 +17,6 @@ class Post(models.Model):
     class Meta:
         ordering = ["date_posted"]
 
-    def __str__(self):
-        return self.title + ' | ' + str(self.author)
-
     def get_absolute_url(self):
         return reverse('blog')
 
@@ -34,6 +31,3 @@ class Comment(models.Model):
 
     class Meta:
         ordering = ["date_added"]
-
-    def __str__(self):
-        return f"Comment {self.body} by {self.name}"
