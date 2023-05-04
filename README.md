@@ -718,42 +718,82 @@ The Superuser is then redirected back to the main Blog page. The entry has been 
 
 </br>
 
-## 5.3 Code and Responsiveness Testing
+## 5.3 Code Testing
 
 </br>
 
 ### CSS
+</br>
 
 The main project CSS and CSS where present in each app was tested using W3C's ![CSS Validation Service.](https://jigsaw.w3.org/css-validator/#validate_by_input) In all instances, the CSS was validated by direct input. No warnings or errors were returned.
+</br>
 
 ### JavaScript
+</br>
 
-All pieces of JavaScript were tested using the ![JSHint](https://jshint.com/) validator tool. No errors were returned. 
+All pieces of JavaScript were tested using the ![JSHint](https://jshint.com/) validator tool. No errors were returned.
+</br>
 
 ### Python
+</br>
 
 The Python Code used throughout the project was tested using Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#). Where required, the code has been reformatted to remove empty spaces or reduce line length. There are no errors being returned.
+</br>
 
 ### HTML
+</br>
 
 All of the HTML was tested using W3C's ![Markup Validation Service](https://validator.w3.org/#validate_by_input). The HTML was validated by direct input by viewing each page source and pasting the code into the validator. This prevented errors being returned which would have been the result of Django syntax being present had the HTML been copied directly from the development environment.
 
-The HTML passed validation with no errors being returned. However, there were a number of warnings:
+The HTML has undergone numerous edits and refactoring and it has now passed validation with no errors being returned (previous errors are discussed in the Bugs Section below). However, there are a number of warnings:
 
 The Mystic Mindfulness ![homepage](https://mystic-mindfulness.herokuapp.com/) returns four "Empty heading". The first warning relates to a h4 element that is initially empty but is populated with a random quote on page load. This h4 element is contained in the base.html file in the project template's folder and so this warning will be returned on every html page that extends the base.html.
 
 The next three are h6 elements that contain Font-Awesome icons.
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/html-testing-index.png?raw=true)</br>
 </br>
 
+## 5.4 Performance and Responsiveness Testing
+</br>
 
+### Performance
+</br>
 
+The site's main pages (home, products and blog) were run through the Lighthouse ![wed.dev](https://pagespeed.web.dev/) to test the site for:
 
-W3C HTML:
+* Performance
+* Accessibility
+* Best Practice
+* SEO
 
-Form error - thinks there's 2 id's but the widget replaces the old image with the new. So the old image is given an id and the new image's actual id is put in instead. When converted to HTML on the page it looks like there's 2 id's included.
+The site scored high on Accessibility, Best Practice and SEO but poor on Performance, with the homepage obtaining the lowest score of those tested.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/lighthouse-desktop.png?raw=true)</br>
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/lighthouse-mobile.png?raw=true)</br>
+</br>
+
+The use of large images had the largest impact on page performance. It should be noted that the performance score on mobile fluctuated on numerous re-runs of the test going as high as 51%.
+</br>
+
+### Responsiveness
+</br>
+
+The responsiveness tests were carried out manually using Google Chrome's ![Inspect Function](https://developer.chrome.com/docs/devtools/open/) with also some real world testing on actual devices. Some of the devices tested included (but not limited to):
+
+* Nest Hub Max
+* iPad Mini
+* iPad Air
+* Samsung Galaxy S8+
+* iPhone SE
+* Samsung Galaxy S8 (real-world test on device)
+* Samsung Galaxy S9 (real-world test on device)
+* Apple MacBook Air (real-world test on device)
+</br>
 
 
 ## 6. Bugs
@@ -774,6 +814,7 @@ The fix was to remove the "exportpdf" plugin from the CKEDITOR_CONFIGS in the pr
 </br>
 
 #### Python Bare Except Error
+</br>
 
 The "Post" model in the blog app contained a function with a Try/Except statement which would attempt to call the image contained within the model or, if none existed, call a default. A "bare except" error was discovered when the code was put through Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#).
 </br>
@@ -792,6 +833,7 @@ In actuality this function was already redundant as although its purpose was to 
 </br>
 
 #### Product Rating
+</br>
 
 As documented above in the User Testing Section, authenticated and logged in users are able to review products. Any site visitor, authenticated or not can browse products and filter by price and category. Earlier drafts contained sort by rating functionality. If a product had more than one rating, it would display normally on the main product page. When a user sorted products according to rating, the product would duplicate (with different ratings) according to the number of ratings it had. As per the screenshot below, two users left ratings and so two instances of the product were displayed when a user sorted by rating.
 </br>
