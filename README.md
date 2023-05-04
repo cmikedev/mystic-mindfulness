@@ -30,7 +30,7 @@ As this is a B2C model, the aim is to reach customers directly. The three main m
 </br>
 
 ### 2.1 Search Engine Optimization
-The first priority is to ensure that potential customers who are either already familiar with crystals and are looking to make a purchase or have some familiarity and are perhaps seeking them out for the first time are able to find the Mystic Mindfulness website through a search engine. In order to achieve this, the Mystic Mindfulness website utilises a mix of long and short-tail keywords in its meta data. These have been carefully selected and curated using the ![Wordtracker](https://www.wordtracker.com/search) to judge their effectiveness. Additionally, keyword phrases and words have been used throughout the site in order to increase visibility without impacting on value.
+The first priority is to ensure that potential customers who are either already familiar with crystals and are looking to make a purchase or have some familiarity and are perhaps seeking them out for the first time are able to find the Mystic Mindfulness website through a search engine. In order to achieve this, the Mystic Mindfulness website utilises a mix of long and short-tail keywords in its meta data. These have been carefully selected and curated using the [Wordtracker](https://www.wordtracker.com/search) to judge their effectiveness. Additionally, keyword phrases and words have been used throughout the site in order to increase visibility without impacting on value.
 </br>
 
 ### 2.2 Social Media
@@ -82,7 +82,7 @@ ____
 ### 4.1 Visual Design
 To fulfill its purpose as an ecommerce site selling items which fall under the "Mysticism" and "Wellness" umbrellas, inspiration was taken from sources that were either in similar markets or whose visuals illicited emotions that one would link to spirituality and wellness. Integrally, the site must be engaging, clean, intuitive and easy to navigate.
 
-Visually, the Mystic Mindfulness website is based on Code Institute's Boutique Ado project and ![The Psychic Tree](https://www.thepsychictree.co.uk/) webstore. All of the product images were taken from ![The Psychic Tree](https://www.thepsychictree.co.uk/). Additionally, many other wellness and mystical websites were viewed and it was found that the use of a black and white colour palette offset by bright images was the norm. This design, partcularly of the use of relatively large white spaces denoted health, emptiness and a clear mind.
+Visually, the Mystic Mindfulness website is based on Code Institute's Boutique Ado project and [The Psychic Tree](https://www.thepsychictree.co.uk/) webstore. All of the product images were taken from [The Psychic Tree](https://www.thepsychictree.co.uk/). Additionally, many other wellness and mystical websites were viewed and it was found that the use of a black and white colour palette offset by bright images was the norm. This design, partcularly of the use of relatively large white spaces denoted health, emptiness and a clear mind.
 
 The font differed between similar websites but in general, there was a combined use of stylised font with plain, clear font for the more important sections such as purchase options, links or instructions. This combination has been followed in the Mystic Mindfulness website. For the stylised font parts, the "Bilbo" font-family was used. This is a "Lord of the Rings" inspired font. The "Lord of the Rings" is a very recognisable cultural reference and the fantasy-oriented design of the Bilbo font reinforces the mystical element of the Mystic Mindfulness website.
 
@@ -114,7 +114,7 @@ The additional features that have been added are:
 * Custom Products page
 * The ability to leave a review and rating on a product
 * The blog app including the ability to comment on a post
-* Newsletter sign-up via the newsletter app which comes from Python Lessons' ![Django Tutorial - Introduction no Subscribers and Newsletter](https://www.youtube.com/watch?v=wl4Yxo5_Cgw&t=386s).
+* Newsletter sign-up via the newsletter app which comes from Python Lessons' [Django Tutorial - Introduction no Subscribers and Newsletter](https://www.youtube.com/watch?v=wl4Yxo5_Cgw&t=386s).
 </br>
 
 The database schema has been designed as follows:
@@ -758,23 +758,23 @@ The Superuser is then redirected back to the main Blog page. The entry has been 
 </br>
 
 ### CSS
-The main project CSS and CSS where present in each app was tested using W3C's ![CSS Validation Service.](https://jigsaw.w3.org/css-validator/#validate_by_input) In all instances, the CSS was validated by direct input. No warnings or errors were returned.
+The main project CSS and CSS where present in each app was tested using W3C's [CSS Validation Service.](https://jigsaw.w3.org/css-validator/#validate_by_input) In all instances, the CSS was validated by direct input. No warnings or errors were returned.
 </br>
 
 ### JavaScript
-All pieces of JavaScript were tested using the ![JSHint](https://jshint.com/) validator tool. No errors were returned.
+All pieces of JavaScript were tested using the [JSHint](https://jshint.com/) validator tool. No errors were returned.
 </br>
 
 ### Python
-The Python Code used throughout the project was tested using Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#). Where required, the code has been reformatted to remove empty spaces or reduce line length. There are no errors being returned.
+The Python Code used throughout the project was tested using Code Institute's [Python Linter](https://pep8ci.herokuapp.com/#). Where required, the code has been reformatted to remove empty spaces or reduce line length. There are no errors being returned.
 </br>
 
 ### HTML
-All of the HTML was tested using W3C's ![Markup Validation Service](https://validator.w3.org/#validate_by_input). The HTML was validated by direct input by viewing each page source and pasting the code into the validator. This prevented errors being returned which would have been the result of Django syntax being present had the HTML been copied directly from the development environment.
+All of the HTML was tested using W3C's [Markup Validation Service](https://validator.w3.org/#validate_by_input). The HTML was validated by direct input by viewing each page source and pasting the code into the validator. This prevented errors being returned which would have been the result of Django syntax being present had the HTML been copied directly from the development environment.
 
 The HTML has undergone numerous edits and refactoring and it has now passed validation with no errors being returned (previous errors are discussed in the Bugs Section below). However, there are a number of warnings:
 
-The Mystic Mindfulness ![homepage](https://mystic-mindfulness.herokuapp.com/) returns four "Empty heading". The first warning relates to a h4 element that is initially empty but is populated with a random quote on page load. This h4 element is contained in the base.html file in the project template's folder and so this warning will be returned on every html page that extends the base.html.
+The Mystic Mindfulness [homepage](https://mystic-mindfulness.herokuapp.com/) returns four "Empty heading". The first warning relates to a h4 element that is initially empty but is populated with a random quote on page load. This h4 element is contained in the base.html file in the project template's folder and so this warning will be returned on every html page that extends the base.html.
 
 The next three are h6 elements that contain Font-Awesome icons.
 </br>
@@ -786,7 +786,7 @@ The next three are h6 elements that contain Font-Awesome icons.
 </br>
 
 ### Performance
-The site's main pages (home, products and blog) were run through the Lighthouse ![wed.dev](https://pagespeed.web.dev/) to test the site for:
+The site's main pages (home, products and blog) were run through the Lighthouse [wed.dev](https://pagespeed.web.dev/) to test the site for:
 
 * Performance
 * Accessibility
@@ -806,7 +806,7 @@ The use of large images had the largest impact on page performance. It should be
 </br>
 
 ### Responsiveness
-The responsiveness tests were carried out manually using Google Chrome's ![Inspect Function](https://developer.chrome.com/docs/devtools/open/) with also some real world testing on actual devices. Some of the devices tested included (but not limited to):
+The responsiveness tests were carried out manually using Google Chrome's [Inspect Function](https://developer.chrome.com/docs/devtools/open/) with also some real world testing on actual devices. Some of the devices tested included (but not limited to):
 
 * Nest Hub Max
 * iPad Mini
@@ -841,7 +841,7 @@ The fix was to remove the "exportpdf" plugin from the CKEDITOR_CONFIGS in the pr
 #### Python Bare Except Error
 </br>
 
-The "Post" model in the blog app contained a function with a Try/Except statement which would attempt to call the image contained within the model or, if none existed, call a default. A "bare except" error was discovered when the code was put through Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#).
+The "Post" model in the blog app contained a function with a Try/Except statement which would attempt to call the image contained within the model or, if none existed, call a default. A "bare except" error was discovered when the code was put through Code Institute's [Python Linter](https://pep8ci.herokuapp.com/#).
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/blog-models-pyerror.png?raw=true)</br>
@@ -924,7 +924,88 @@ However, when the user hovers their cursor over the "Remove" link it changes to 
 ____
 </br>
 
-# Other
+## 7 Deployment
+
+### 7.1 Deploying the repository via Heroku
+* The app was created using Heroku via the following steps:
+    * On the https://dashboard.heroku.com/apps page, click <mark style="background-color: grey">New</mark> and then select <mark style="background-color: grey">Create New App</mark> from the drop-down menu.
+    * When the next page loads insert the <mark style="background-color: grey">App name</mark> and <mark style="background-color: grey">Choose a region</mark>. The click <mark style="background-color: grey">Create app</mark>
+    * In the settings tab click on <mark style="background-color: grey">Reveal Config Vars</mark> and add the key <mark style="background-color: grey">Port</mark> and the value <mark style="background-color: grey">8000</mark>. The other credentials used are:
+        * Amazon Web Services
+        * ElephantSQL
+        * Stripe
+    </br >
+* To deploy the Heroku app:
+    * Click on the <mark style="background-color: grey">Deploy</mark> tab and select <mark style="background-color: grey">Github-Connect to Github</mark>.
+    * Enter the repository name and click <mark style="background-color: grey">Search</mark>.
+    * Choose the repository that holds the correct files and click <mark style="background-color: grey">Connect</mark>.
+    * A choice is offered between manual or automatic deployment whereby the app is updated when changes are pushed to GitHub. For this app automatic was selected.
+    * Once the deployment method has been chosen the app will be built and can be launched by clicking the <mark style="background-color: grey">Open app</mark> button at the top of the page.<br />
+    <br />
+
+### 7.2 GitHub
+#### Forking the repository
+* The GitHub repository can be forked to make a copy of the original. This copy can then be viewed or changed without affecting the original repository via the following steps:
+    * In the Respository section, select the [Mystic Mindfulness](https://github.com/cmikedev/mystic-mindfulness) repository
+    * At the top right of the page select <mark style="background-color: grey">fork</mark> from the menu below your profile
+    * A copy of the repository will now be created in your account
+
+#### Creating a local clone
+* To create a local clone via GitHub:
+    * In the Respository section, select the [Mystic Mindfulness](https://github.com/cmikedev/mystic-mindfulness) repository
+    * From the horizontal menu above the repository contents select <mark style="background-color: grey">Code</mark>
+    * __Copy__ the link that that is shown
+    * Within __Gitpod__ change the directory to where you would like the location of the cloned directory to be
+    * Type __git clone__ and paste the link that you copied
+    * Press <mark style="background-color: grey">Enter</mark> and the local clone will be created
+</br></br>
+___
+
+</br>
+
+
+## 8. References
+
+
+* Boutique Ado Walkthrough Project
+
+    * Where the Python, JavaScript or CSS has been used or modified, it has been referenced in the code.
+
+* Python Lessons - ![Youtube tutorial](https://www.youtube.com/watch?v=wl4Yxo5_Cgw&t=386s)
+    
+    * The newsletter app was taken from this tutorial
+
+* Modern Web - [How to make and ecommerce website](https://dev.to/themodernweb/how-to-make-an-e-commerce-website-with-html-css-and-js-3aon)
+
+    * This site aided in the design of the homepage and CSS used has been referenced in the base.css file
+
+* The text for the blog posts were taken from:
+    * [Healthline](https://www.healthline.com/health/healing-with-rose-quartz)
+    * [Tiny Rituals](https://tinyrituals.co/blogs/tiny-rituals/amethyst-meaning-healing-properties-and-everyday-uses)
+    * [The Spruce](https://www.thespruce.com/calcite-feng-shui-4153035)
+
+* All of the product photos were taken from [The Psychic Tree](https://www.thepsychictree.co.uk/)
+</br></br>
+___
+
+</br>
+
+
+## 9. Research
+
+
+* freeCodeCamp.org - [How to Build an E-commerce Website with Django and Python](https://www.youtube.com/watch?v=YZvRrldjf1Y)
+* Andika Pratama - [How to Create Fully Functional E-commerce Website With Django](https://medium.com/analytics-vidhya/how-to-create-simple-e-commerce-website-with-django-step-1-of-5-42c6cca414c2)
+* Django Central - [Building A Blog Application With Django](https://djangocentral.com/building-a-blog-application-with-django/)
+* How to Code More - [How To Create A Comment Section For Django Blog/Website in Just 5 Steps using django-comments-xtd ?](https://awstip.com/how-to-create-a-comment-section-for-django-blog-website-in-just-5-steps-using-django-comments-xtd-99b450540497)
+* Code With Stein - [Python Django Ecommerce Website With Multiple Vendors | Learn Django For Beginners](https://www.youtube.com/watch?v=-QFZsX0b9Cg&t=1579s)
+
+___
+
+</br>
+
+## 10. Acknowledgements
+I would like to thank my course mentor Harry Dhillon for providing guidance on this project.
 
 
 Meta keywords ![Wordtracker](https://www.wordtracker.com/search)
