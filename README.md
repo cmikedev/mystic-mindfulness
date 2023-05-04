@@ -10,11 +10,12 @@ A link to the deployed project via the Heroku app can be found [here](https://my
 
 ### 1.2 Repository
 The GitHub repository can be found [here](https://github.com/cmikedev/mystic-mindfulness).
+</br>
 
 ____
 </br>
 
-## 2. Business Rationale
+## 2. Business Model and Strategy
 
 Mystic Mindfulness is a business-to-customer (B2C) ecommerce website selling healing crystals directly to online consumers. The site specializes in the main three types of healing crystals; Amethyst, Calcite and Quartz.
 </br>
@@ -26,13 +27,18 @@ Mystic Mindfulness is a business-to-customer (B2C) ecommerce website selling hea
 Image created using [Am I Responsive?](https://ui.dev/amiresponsive)
 </br></br>
 
-### 2.1 Marketing Strategy
+As this is a B2C model, the aim is to reach customers directly. The three main methods discussed here of engaging with customers are through Search Engine Optimization, Social Media and a Blog which doubles as a marketing tool.
 
-Social media
+### 2.1 Search Engine Optimization
+</br>
 
-#### Search Engines
+The first priority is to ensure that potential customers who are either already familiar with crystals and are looking to make a purchase or have some familiarity and are perhaps seeking them out for the first time are able to find the Mystic Mindfulness website through a search engine. In order to achieve this, the Mystic Mindfulness website utilises a mix of long and short-tail keywords in its meta data. These have been carefully selected and curated using the ![Wordtracker](https://www.wordtracker.com/search) to judge their effectiveness. Additionally, keyword phrases and words have been used throughout the site in order to increase visibility without impacting on value.
+</br>
 
-#### Facebook Business Page
+### 2.2 Social Media
+</br>
+
+Social media is integral to reaching customers. A Facebook page for Mystic Mindfulness was created in order to allow users to engage immediately through public posts, messages and sharing products with their contacts.
 
 The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100092204265600). Please note that Facebook does not allow business pages to remain in perpetuity and the aforementioned link may be made inactive at any time. Should that occur at time of reading, the below screenshots have been provided to illustrate the active Mystic Mindfulness Facebook business page.
 </br>
@@ -44,14 +50,17 @@ The Facebook page can be found [here](https://www.facebook.com/profile.php?id=10
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/facebook-bottom.png?raw=true)</br>
 </br>
 
-#### The Blog
+### 2.3 The Blog
+</br>
 
 The Mystic Mindfulness website contains a blog with posts written by the site admin. The purpose of the blog is twofold. Firstly, to provide education and guidance to any visitors who may be unsure of what crystals to purchase. By providing such a visitor with guidance they will be more sure of their needs and more likely to make a purchase. Secondly, by extolling the benefits of the crystals within the post topic, the blog itself becomes a marketing tool to drive up sales from visitors.
+</br>
 
 ____
 </br>
 
 ## 3. Planning
+</br>
 
 The goal of the Mystic Mindfulness ecommerce site is to provide the potential customer with a clear, intuitive interface which allows them to immediately understand the services being offered, navigate easily through the various pages, sign-up for a newsletter, interact via comments and reviews and ultimately make a purchase. To achieve this, Agile methodology was used within the planning and design process. Github's Kanban board was implemented to design and track user stories which were vital in developing a user-focused experience:
 
@@ -70,20 +79,34 @@ The goal of the Mystic Mindfulness ecommerce site is to provide the potential cu
 13. As a Site User I can view blog entries relating so that I can learn more about the products on the site
 
 The completed Kanban Board can be found [here](https://github.com/users/cmikedev/projects/9).
+</br>
 
 ____
 </br>
 
-
-
 ## 4. Design
+</br>
 
-Font-Family used was Bilbo. LOTR is a recognisable cultural reference and reinforces the mystical/fantastical element of the site. The expectation is that the font will create that connection in users head.
+### 4.1 Visual Design
+</br>
 
-Design - background to be somewhat ethereal/cosmic. 
+To fulfill its purpose as an ecommerce site selling items which fall under the "Mysticism" and "Wellness" umbrellas, inspiration was taken from sources that were either in similar markets or whose visuals illicited emotions that one would link to spirituality and wellness. Integrally, the site must be engaging, clean, intuitive and easy to navigate.
 
-Large use of white colours to denote health, emptiness, clean-living. No clutter.
+Visually, the Mystic Mindfulness website is based on Code Institute's Boutique Ado project and ![The Psychic Tree](https://www.thepsychictree.co.uk/) webstore. All of the product images were taken from ![The Psychic Tree](https://www.thepsychictree.co.uk/). Additionally, many other wellness and mystical websites were viewed and it was found that the use of a black and white colour palette offset by bright images was the norm. This design, partcularly of the use of relatively large white spaces denoted health, emptiness and a clear mind.
 
+The font differed between similar websites but in general, there was a combined use of stylised font with plain, clear font for the more important sections such as purchase options, links or instructions. This combination has been followed in the Mystic Mindfulness website. For the stylised font parts, the "Bilbo" font-family was used. This is a "Lord of the Rings" inspired font. The "Lord of the Rings" is a very recognisable cultural reference and the fantasy-oriented design of the Bilbo font reinforces the mystical element of the Mystic Mindfulness website.
+
+To reinforce the mystical theme further, a banner runs below the navigation which renders a random inspirational quote based on mysticism when the page is loaded.
+</br>
+
+![image]()</br>
+</br>
+
+When a visitor comes to the Mystic Mindfulness website they should be presented with a layout that is familiar and instantly recognisable as an ecommerce site. The site's design is simple, familiar and easy to navigate.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/wireframes.png?raw=true)</br>
+</br>
 
 ____
 </br>
