@@ -717,23 +717,23 @@ The Superuser is then redirected back to the main Blog page. The entry has been 
 
 </br>
 
-### 5.3 Code and Responsiveness Testing
+## 5.3 Code and Responsiveness Testing
 
 </br>
 
-## CSS
+### CSS
 
 The main project CSS and CSS where present in each app was tested using W3C's ![CSS Validation Service.](https://jigsaw.w3.org/css-validator/#validate_by_input) In all instances, the CSS was validated by direct input. No warnings or errors were returned.
 
-## JavaScript
+### JavaScript
 
 All pieces of JavaScript were tested using the ![JSHint](https://jshint.com/) validator tool. No errors were returned. 
 
-## Python
+### Python
 
 The Python Code used throughout the project was tested using Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#). Where required, the code has been reformatted to remove empty spaces or reduce line length. There are no errors being returned.
 
-## HTML
+### HTML
 
 All of the HTML was tested using W3C's ![Markup Validation Service](https://validator.w3.org/#validate_by_input). The HTML was validated by direct input by viewing each page source and pasting the code into the validator. This prevented errors being returned which would have been the result of Django syntax being present had the HTML been copied directly from the development environment.
 
@@ -755,13 +755,35 @@ W3C HTML:
 Form error - thinks there's 2 id's but the widget replaces the old image with the new. So the old image is given an id and the new image's actual id is put in instead. When converted to HTML on the page it looks like there's 2 id's included.
 
 
-# Errors
+## 6. Bugs
 
-# Unfixed Errors
+### Bugs - Fixed
 
 Leaving the class names the same on each template meant that when the item was removed, an error was raised in the terminal whereby the item id came back as undefined. The item was successfully deleted however.
 
 Making the class names different in each of the templates and the JavaScript fixed the server error. However, when the user hovers their cursor over the "Remove" link it changes to a "caret" cursor which means that the user would likely mistake the "Remove" link for a piece of text rather than a link. This remains unfixed at the moment.
+
+
+### Bugs - Unfixed
+
+The blog and product app both contain identical files titled "custom_clearable_file_input.html". This file activates the "widget.py" file which again is common to both apps (blog app displayed below). When a Superuser accesses the form to either add or edit a blog post or product, a thumbnail of the image that is being uploaded or is currently in place will be rendered.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-2.png?raw=true)</br>
+</br>
+
+However, to achieve this, the widget replaces the old image with the new. The old image is removed and the new image is assigned an id of "new-image". However, an error arises during HTML validation whereby when the form is rendered it appears that two id's appear on the same line of code which causes a "Duplicate Attribute" error.
+</br>
+
+![image]()</br>
+</br>
+
+![image]()</br>
+</br>
+
+In order to fix the HTML validation error the "custom_clearable_file_input.html" is no longer called as part of the form and the associated JavaScript has been removed from the add and edit blog/product html templates. The result is that there is now full error-free functionality. The Superuser no longer has a visual que, particularly for editing images but instead must rely on file names. It is due to this impact on user experience that this bug is considered unfixed.
+
+
 
 # Other
 
