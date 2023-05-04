@@ -582,7 +582,9 @@ If an unauthenticated user knows the url of the Product Management page and trie
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-2.png?raw=true)</br>
 </br>
 
-The Superuser will be directed to a form which allows them to upload a product, selecting the category, name, description, price and if required, an image.</br>
+The Superuser will be directed to a form which allows them to upload a product, selecting the category, name, description, price and if required, an image.
+
+Please see the Bugs Section - Duplicate Attribute Error as the form thumbnail widget has been removed.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-product-test-3.png?raw=true)</br>
@@ -611,7 +613,9 @@ If a Superuser has logged into their account, "Edit Product" and "Delete Product
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-1.png?raw=true)</br>
 </br>
 
-Clicking the "Edit Product" link will allow the Superuser to access a form which overwrites the current details recorded for the selected product including the photo. Here, the price has been changed.</br>
+Clicking the "Edit Product" link will allow the Superuser to access a form which overwrites the current details recorded for the selected product including the photo. Here, the price has been changed.
+
+Please see the Bugs Section - Duplicate Attribute Error as the form thumbnail widget has been removed.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-product-test-2.png?raw=true)</br>
@@ -675,7 +679,9 @@ If an unauthenticated user knows the url of the add a blog post page and tries t
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-2.png?raw=true)</br>
 </br>
 
-The Superuser can create an entry by filling out the form. The photo is optional. Here, we won't select one and a default image should render. To submit the form the Superuser selects the "Add Post" button.</br>
+The Superuser can create an entry by filling out the form. The photo is optional. Here, we won't select one and a default image should render. To submit the form the Superuser selects the "Add Post" button.
+
+Please see the Bugs Section - Duplicate Attribute Error as the form thumbnail widget has been removed.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/add-blog-test-3.png?raw=true)</br>
@@ -715,7 +721,9 @@ If an unauthenticated user knows the url of the edit blog post page and tries to
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-2.png?raw=true)</br>
 </br>
 
-The Superuser will be redirected to a form which allows them to edit the blog post. Here, a photo is added. Clicking the "Edit Post" button will submit the changes.</br>
+The Superuser will be redirected to a form which allows them to edit the blog post. Here, a photo is added. Clicking the "Edit Post" button will submit the changes.
+
+Please see the Bugs Section - Duplicate Attribute Error as the form thumbnail widget has been removed.</br>
 </br>
 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/edit-blog-test-3.png?raw=true)</br>
@@ -825,6 +833,10 @@ ____
 </br>
 
 ### 6.1 Bugs - Fixed
+</br>
+
+#### Navbar Alignment
+The navbar desktop menu was out of alignment as can be seen in all of the screenshots during the testing section above. This has been resolved.
 </br>
 
 #### Django-ckeditor Error code: exportpdf-no-token-url
@@ -965,15 +977,13 @@ ___
 
 
 ## 8. References
-
-
 * Boutique Ado Walkthrough Project
 
     * Where the Python, JavaScript or CSS has been used or modified, it has been referenced in the code.
 
-* Python Lessons - ![Youtube tutorial](https://www.youtube.com/watch?v=wl4Yxo5_Cgw&t=386s)
+* Python Lessons - [Youtube tutorial](https://www.youtube.com/watch?v=wl4Yxo5_Cgw&t=386s)
     
-    * The newsletter app was taken from this tutorial
+    * The newsletter app was taken from this tutorial. There were modifications made to the HTML to aid responsiveness.
 
 * Modern Web - [How to make and ecommerce website](https://dev.to/themodernweb/how-to-make-an-e-commerce-website-with-html-css-and-js-3aon)
 
@@ -985,6 +995,8 @@ ___
     * [The Spruce](https://www.thespruce.com/calcite-feng-shui-4153035)
 
 * All of the product photos were taken from [The Psychic Tree](https://www.thepsychictree.co.uk/)
+
+* The privacy policy was generated from [Privacy Policy Generator](https://www.privacypolicygenerator.info/)
 </br></br>
 ___
 
@@ -992,8 +1004,6 @@ ___
 
 
 ## 9. Research
-
-
 * freeCodeCamp.org - [How to Build an E-commerce Website with Django and Python](https://www.youtube.com/watch?v=YZvRrldjf1Y)
 * Andika Pratama - [How to Create Fully Functional E-commerce Website With Django](https://medium.com/analytics-vidhya/how-to-create-simple-e-commerce-website-with-django-step-1-of-5-42c6cca414c2)
 * Django Central - [Building A Blog Application With Django](https://djangocentral.com/building-a-blog-application-with-django/)
@@ -1006,32 +1016,3 @@ ___
 
 ## 10. Acknowledgements
 I would like to thank my course mentor Harry Dhillon for providing guidance on this project.
-
-
-Meta keywords ![Wordtracker](https://www.wordtracker.com/search)
-
-Facebook Page ![Mystic Mindfulness Facebook Page](https://www.facebook.com/profile.php?id=100092204265600)
-
-Privacy Policy ![Privacy Policy Generator](https://www.privacypolicygenerator.info/)
-
-https://github.com/Code-Institute-Solutions/boutique_ado_v1
-
-
-https://www.youtube.com/watch?v=wl4Yxo5_Cgw&t=386s
-
-https://dev.to/themodernweb/how-to-make-an-e-commerce-website-with-html-css-and-js-3aon
-
-Blog posts
-
-https://www.healthline.com/health/healing-with-rose-quartz
-
-https://tinyrituals.co/blogs/tiny-rituals/amethyst-meaning-healing-properties-and-everyday-uses
-
-https://www.thespruce.com/calcite-feng-shui-4153035
-
-
-
-site design 
-
-https://www.thepsychictree.co.uk/
-
