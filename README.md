@@ -516,6 +516,7 @@ Browsing back to the page, the user's comment will appear.</br>
 </br>
 
 </br>
+
 ### 5.2 Admin / Superuser CRUD Capability Testing
 </br>
 
@@ -759,12 +760,13 @@ Form error - thinks there's 2 id's but the widget replaces the old image with th
 
 ### Bugs - Fixed
 
-Leaving the class names the same on each template meant that when the item was removed, an error was raised in the terminal whereby the item id came back as undefined. The item was successfully deleted however.
 
-Making the class names different in each of the templates and the JavaScript fixed the server error. However, when the user hovers their cursor over the "Remove" link it changes to a "caret" cursor which means that the user would likely mistake the "Remove" link for a piece of text rather than a link. This remains unfixed at the moment.
 
 
 ### Bugs - Unfixed
+
+#### Duplicate Attribute Error
+</br>
 
 The blog and product app both contain identical files titled "custom_clearable_file_input.html". This file activates the "widget.py" file which again is common to both apps (blog app displayed below). When a Superuser accesses the form to either add or edit a blog post or product, a thumbnail of the image that is being uploaded or is currently in place will be rendered.
 </br>
@@ -775,13 +777,44 @@ The blog and product app both contain identical files titled "custom_clearable_f
 However, to achieve this, the widget replaces the old image with the new. The old image is removed and the new image is assigned an id of "new-image". However, an error arises during HTML validation whereby when the form is rendered it appears that two id's appear on the same line of code which causes a "Duplicate Attribute" error.
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/form-error-1.png?raw=true)</br>
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/form-error-2.png?raw=true)</br>
 </br>
 
 In order to fix the HTML validation error the "custom_clearable_file_input.html" is no longer called as part of the form and the associated JavaScript has been removed from the add and edit blog/product html templates. The result is that there is now full error-free functionality. The Superuser no longer has a visual que, particularly for editing images but instead must rely on file names. It is due to this impact on user experience that this bug is considered unfixed.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/form-error-3.png?raw=true)</br>
+</br>
+
+#### Duplicate ID Error
+</br>
+
+A HTML validation error of duplicate id's was returned on the bag page. This was due to the "quality-form.html" being called for both desktop and mobile views. When the page was rendered, the id that was in the "quality-form.html" and is used on the "Remove" link to remove an item from the cart was returned twice.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/html-testing-bag.png?raw=true)</br>
+</br>
+
+To solve this, two html files were created and called instead of one:
+* quantity_form_desktop.html
+* quantity_form_mobile.html
+
+Both of these used different id's for "Remove" item link. The class names utilised by the JavaScript in the bag.html files were left unchanged. Leaving these unchanged meant that when an item was removed, an error was raised in the terminal whereby the item id came back as undefined. The item was successfully deleted however.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/html-testing-bag-console-error.png?raw=true)</br>
+</br>
+
+Making the class names different in each of the templates and the JavaScript fixed the server error. Items are successfully deleted without either HTML or Console errors.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/html-testing-bag-fix.png?raw=true)</br>
+</br>
+
+However, when the user hovers their cursor over the "Remove" link it changes to a "caret". This directly impacts user experience as a user would not expect the cursor to display in "caret" style unless it was placed over text. The "Remove" link works as it should but due to the impact on user experience this bug is considered unfixed.
 
 
 
