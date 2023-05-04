@@ -976,6 +976,14 @@ ___
     
     * The newsletter app was taken from this tutorial. There were modifications made to the HTML to aid responsiveness.
 
+* Code with Stein - [Django Ecommerce Website](https://www.youtube.com/watch?v=8iCqlFyFu2s&t=201s)
+
+    * The product reviews were adapted to the product app from this tutorial.
+
+* Codemy.com - [Youtube tutorial](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=1)
+
+    * The blog app was based on this tutorial.
+
 * Modern Web - [How to make and ecommerce website](https://dev.to/themodernweb/how-to-make-an-e-commerce-website-with-html-css-and-js-3aon)
 
     * This site aided in the design of the homepage and CSS used has been referenced in the base.css file
