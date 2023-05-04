@@ -1,22 +1,21 @@
 # Mystic Mindfulness
 
 ## 1. Introduction
-
 Mystic Mindfulness is a fictional ecommerce site offering for sale healing crystals. The premise of the site is to not only appeal to customers already specifically interested in healing crystals but, also potential customers who subscribe to the umbrella 'wellness' lifestyle which, through various marketing strategies discussed below, can be pursuaded to incorporate crystals into their various practices and become paying customers.
+</br>
 
 ### 1.1 Deployed Website
-A link to the deployed project via the Heroku app can be found [here](https://mystic-mindfulness.herokuapp.com/).
+A link to the deployed project via the Heroku app can be found [here](https://mystic-mindfulness.herokuapp.com/).</br>
 
 
 ### 1.2 Repository
 The GitHub repository can be found [here](https://github.com/cmikedev/mystic-mindfulness).
-</br>
+</br></br>
 
 ____
 </br>
 
 ## 2. Business Model and Strategy
-
 Mystic Mindfulness is a business-to-customer (B2C) ecommerce website selling healing crystals directly to online consumers. The site specializes in the main three types of healing crystals; Amethyst, Calcite and Quartz.
 </br>
 </br>
@@ -28,16 +27,13 @@ Image created using [Am I Responsive?](https://ui.dev/amiresponsive)
 </br></br>
 
 As this is a B2C model, the aim is to reach customers directly. The three main methods discussed here of engaging with customers are through Search Engine Optimization, Social Media and a Blog which doubles as a marketing tool.
-
-### 2.1 Search Engine Optimization
 </br>
 
+### 2.1 Search Engine Optimization
 The first priority is to ensure that potential customers who are either already familiar with crystals and are looking to make a purchase or have some familiarity and are perhaps seeking them out for the first time are able to find the Mystic Mindfulness website through a search engine. In order to achieve this, the Mystic Mindfulness website utilises a mix of long and short-tail keywords in its meta data. These have been carefully selected and curated using the ![Wordtracker](https://www.wordtracker.com/search) to judge their effectiveness. Additionally, keyword phrases and words have been used throughout the site in order to increase visibility without impacting on value.
 </br>
 
 ### 2.2 Social Media
-</br>
-
 Social media is integral to reaching customers. A Facebook page for Mystic Mindfulness was created in order to allow users to engage immediately through public posts, messages and sharing products with their contacts.
 
 The Facebook page can be found [here](https://www.facebook.com/profile.php?id=100092204265600). Please note that Facebook does not allow business pages to remain in perpetuity and the aforementioned link may be made inactive at any time. Should that occur at time of reading, the below screenshots have been provided to illustrate the active Mystic Mindfulness Facebook business page.
@@ -51,17 +47,13 @@ The Facebook page can be found [here](https://www.facebook.com/profile.php?id=10
 </br>
 
 ### 2.3 The Blog
-</br>
-
 The Mystic Mindfulness website contains a blog with posts written by the site admin. The purpose of the blog is twofold. Firstly, to provide education and guidance to any visitors who may be unsure of what crystals to purchase. By providing such a visitor with guidance they will be more sure of their needs and more likely to make a purchase. Secondly, by extolling the benefits of the crystals within the post topic, the blog itself becomes a marketing tool to drive up sales from visitors.
-</br>
+</br></br>
 
 ____
 </br>
 
 ## 3. Planning
-</br>
-
 The goal of the Mystic Mindfulness ecommerce site is to provide the potential customer with a clear, intuitive interface which allows them to immediately understand the services being offered, navigate easily through the various pages, sign-up for a newsletter, interact via comments and reviews and ultimately make a purchase. To achieve this, Agile methodology was used within the planning and design process. Github's Kanban board was implemented to design and track user stories which were vital in developing a user-focused experience:
 
 1. As a Site User I can register an account so that I can add items to my cart
@@ -79,7 +71,7 @@ The goal of the Mystic Mindfulness ecommerce site is to provide the potential cu
 13. As a Site User I can view blog entries relating so that I can learn more about the products on the site
 
 The completed Kanban Board can be found [here](https://github.com/users/cmikedev/projects/9).
-</br>
+</br></br>
 
 ____
 </br>
@@ -88,8 +80,6 @@ ____
 </br>
 
 ### 4.1 Visual Design
-</br>
-
 To fulfill its purpose as an ecommerce site selling items which fall under the "Mysticism" and "Wellness" umbrellas, inspiration was taken from sources that were either in similar markets or whose visuals illicited emotions that one would link to spirituality and wellness. Integrally, the site must be engaging, clean, intuitive and easy to navigate.
 
 Visually, the Mystic Mindfulness website is based on Code Institute's Boutique Ado project and ![The Psychic Tree](https://www.thepsychictree.co.uk/) webstore. All of the product images were taken from ![The Psychic Tree](https://www.thepsychictree.co.uk/). Additionally, many other wellness and mystical websites were viewed and it was found that the use of a black and white colour palette offset by bright images was the norm. This design, partcularly of the use of relatively large white spaces denoted health, emptiness and a clear mind.
@@ -99,7 +89,7 @@ The font differed between similar websites but in general, there was a combined 
 To reinforce the mystical theme further, a banner runs below the navigation which renders a random inspirational quote based on mysticism when the page is loaded.
 </br>
 
-![image]()</br>
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/quotes.png?raw=true)</br>
 </br>
 
 When a visitor comes to the Mystic Mindfulness website they should be presented with a layout that is familiar and instantly recognisable as an ecommerce site. The site's design is simple, familiar and easy to navigate.
@@ -108,13 +98,37 @@ When a visitor comes to the Mystic Mindfulness website they should be presented 
 ![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/wireframes.png?raw=true)</br>
 </br>
 
+### 4.2 Technical Design
+The Mystic Mindfulness website is based on Code Institute's Boutique Ado walkthrough project. The site uses Boutique Ado's core functionality including:
+* The bag app
+* The checkout app
+* The profiles app
+
+Within the main project's templates directory, the files contained within the "allauth" and "includes" folders are fro Boutique Ado.
+
+All of the Bootstrap in the Boutique Ado templates has been upgraded from version 3 to version 5. Certain elements (as described in the Bugs Section below) have also been altered.
+
+The additional features that have been added are:
+* Custom Homepage
+* Custom 404 error page
+* Custom Products page
+* The ability to leave a review and rating on a product
+* The blog app including the ability to comment on a post
+* Newsletter sign-up via the newsletter app which comes from Python Lessons' ![Django Tutorial - Introduction no Subscribers and Newsletter](https://www.youtube.com/watch?v=wl4Yxo5_Cgw&t=386s).
+</br>
+
+The database schema has been designed as follows:
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/db-schema.png?raw=true)</br>
+</br>
+
 ____
 </br>
 
 
 
 ## 5. Testing
-
 This section focuses on testing the website from the point of view of the user in line with the user stories utilised in this project's Kanban. The testing is spread across three areas, with authentication testing taking place as part of them:
 
 - 5.1 User Story Testing
@@ -541,8 +555,6 @@ Browsing back to the page, the user's comment will appear.</br>
 </br>
 
 ### 5.2 Admin / Superuser CRUD Capability Testing
-</br>
-
 A Superuser has different rights than a regular user. In addition, when a Superuser signs in to their account, different options in the form of a drop-down from their profile icon and edit/delete links on the Product and Blog pages will be rendered.</br>
 
 ___
@@ -746,26 +758,18 @@ The Superuser is then redirected back to the main Blog page. The entry has been 
 </br>
 
 ### CSS
-</br>
-
 The main project CSS and CSS where present in each app was tested using W3C's ![CSS Validation Service.](https://jigsaw.w3.org/css-validator/#validate_by_input) In all instances, the CSS was validated by direct input. No warnings or errors were returned.
 </br>
 
 ### JavaScript
-</br>
-
 All pieces of JavaScript were tested using the ![JSHint](https://jshint.com/) validator tool. No errors were returned.
 </br>
 
 ### Python
-</br>
-
 The Python Code used throughout the project was tested using Code Institute's ![Python Linter](https://pep8ci.herokuapp.com/#). Where required, the code has been reformatted to remove empty spaces or reduce line length. There are no errors being returned.
 </br>
 
 ### HTML
-</br>
-
 All of the HTML was tested using W3C's ![Markup Validation Service](https://validator.w3.org/#validate_by_input). The HTML was validated by direct input by viewing each page source and pasting the code into the validator. This prevented errors being returned which would have been the result of Django syntax being present had the HTML been copied directly from the development environment.
 
 The HTML has undergone numerous edits and refactoring and it has now passed validation with no errors being returned (previous errors are discussed in the Bugs Section below). However, there are a number of warnings:
@@ -782,8 +786,6 @@ The next three are h6 elements that contain Font-Awesome icons.
 </br>
 
 ### Performance
-</br>
-
 The site's main pages (home, products and blog) were run through the Lighthouse ![wed.dev](https://pagespeed.web.dev/) to test the site for:
 
 * Performance
@@ -804,8 +806,6 @@ The use of large images had the largest impact on page performance. It should be
 </br>
 
 ### Responsiveness
-</br>
-
 The responsiveness tests were carried out manually using Google Chrome's ![Inspect Function](https://developer.chrome.com/docs/devtools/open/) with also some real world testing on actual devices. Some of the devices tested included (but not limited to):
 
 * Nest Hub Max
@@ -816,8 +816,10 @@ The responsiveness tests were carried out manually using Google Chrome's ![Inspe
 * Samsung Galaxy S8 (real-world test on device)
 * Samsung Galaxy S9 (real-world test on device)
 * Apple MacBook Air (real-world test on device)
-</br>
+</br></br>
 
+____
+</br>
 
 ## 6. Bugs
 </br>
@@ -917,9 +919,10 @@ Making the class names different in each of the templates and the JavaScript fix
 </br>
 
 However, when the user hovers their cursor over the "Remove" link it changes to a "caret". This directly impacts user experience as a user would not expect the cursor to display in "caret" style unless it was placed over text. The "Remove" link works as it should but due to the impact on user experience this bug is considered unfixed.
+</br></br>
+
+____
 </br>
-
-
 
 # Other
 
