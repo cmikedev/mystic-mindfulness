@@ -30,7 +30,7 @@ As this is a B2C model, the aim is to reach customers directly. The three main m
 </br>
 
 ### 2.1 Search Engine Optimization
-The first priority is to ensure that potential customers who are either already familiar with crystals and are looking to make a purchase or have some familiarity and are perhaps seeking them out for the first time are able to find the Mystic Mindfulness website through a search engine. In order to achieve this, the Mystic Mindfulness website utilises a mix of long and short-tail keywords in its meta data. These have been carefully selected and curated using the [Wordtracker](https://www.wordtracker.com/search) to judge their effectiveness. Additionally, keyword phrases and words have been used throughout the site in order to increase visibility without impacting on value.
+The first priority is to ensure that potential customers who are either already familiar with crystals and are looking to make a purchase or have some familiarity and are perhaps seeking them out for the first time are able to find the Mystic Mindfulness website through a search engine. In order to achieve this, the Mystic Mindfulness website utilises a mix of long and short-tail keywords in its meta data. These have been carefully selected and curated using the [Wordtracker](https://www.wordtracker.com/search) website to judge their effectiveness. Additionally, keyword phrases and words have been used throughout the site in order to increase visibility without impacting on value.
 </br>
 
 ### 2.2 Social Media
@@ -82,7 +82,7 @@ ____
 ### 4.1 Visual Design
 To fulfill its purpose as an ecommerce site selling items which fall under the "Mysticism" and "Wellness" umbrellas, inspiration was taken from sources that were either in similar markets or whose visuals illicited emotions that one would link to spirituality and wellness. Integrally, the site must be engaging, clean, intuitive and easy to navigate.
 
-Visually, the Mystic Mindfulness website is based on Code Institute's Boutique Ado project and [The Psychic Tree](https://www.thepsychictree.co.uk/) webstore. All of the product images were taken from [The Psychic Tree](https://www.thepsychictree.co.uk/). Additionally, many other wellness and mystical websites were viewed and it was found that the use of a black and white colour palette offset by bright images was the norm. This design, partcularly of the use of relatively large white spaces denoted health, emptiness and a clear mind.
+Visually, the Mystic Mindfulness website is based on Code Institute's Boutique Ado project and [The Psychic Tree](https://www.thepsychictree.co.uk/) webstore. All of the product images were taken from [The Psychic Tree](https://www.thepsychictree.co.uk/). Additionally, many other wellness and mystical websites were viewed and it was found that the use of a black and white colour palette offset by bright images was the norm. This design of other studied sites, partcularly the use of relatively large white spaces denoted health, emptiness and a clear mind and that styling was followed in Mystic Mindfulness.
 
 The font differed between similar websites but in general, there was a combined use of stylised font with plain, clear font for the more important sections such as purchase options, links or instructions. This combination has been followed in the Mystic Mindfulness website. For the stylised font parts, the "Bilbo" font-family was used. This is a "Lord of the Rings" inspired font. The "Lord of the Rings" is a very recognisable cultural reference and the fantasy-oriented design of the Bilbo font reinforces the mystical element of the Mystic Mindfulness website.
 
@@ -837,10 +837,9 @@ ____
 
 #### Navbar Alignment
 The navbar desktop menu was out of alignment as can be seen in all of the screenshots during the testing section above. This has been resolved.
-</br>
+</br></br>
 
 #### Django-ckeditor Error code: exportpdf-no-token-url
-
 When posting a blog post, an "exportpdf-no-token-url" error was returned to the console. This related to the CKEditor plugin which is utilised in the Blog post and comment sections to use Rich Text forms.
 </br>
 
@@ -848,11 +847,9 @@ When posting a blog post, an "exportpdf-no-token-url" error was returned to the 
 </br>
 
 The fix was to remove the "exportpdf" plugin from the CKEDITOR_CONFIGS in the project's settings.py file.
-</br>
+</br></br>
 
 #### Python Bare Except Error
-</br>
-
 The "Post" model in the blog app contained a function with a Try/Except statement which would attempt to call the image contained within the model or, if none existed, call a default. A "bare except" error was discovered when the code was put through Code Institute's [Python Linter](https://pep8ci.herokuapp.com/#).
 </br>
 
@@ -870,8 +867,6 @@ In actuality this function was already redundant as although its purpose was to 
 </br>
 
 #### Product Rating
-</br>
-
 As documented above in the User Testing Section, authenticated and logged in users are able to review products. Any site visitor, authenticated or not can browse products and filter by price and category. Earlier drafts contained sort by rating functionality. If a product had more than one rating, it would display normally on the main product page. When a user sorted products according to rating, the product would duplicate (with different ratings) according to the number of ratings it had. As per the screenshot below, two users left ratings and so two instances of the product were displayed when a user sorted by rating.
 </br>
 
@@ -879,11 +874,9 @@ As documented above in the User Testing Section, authenticated and logged in use
 </br>
 
 This appears to be due to an instance of each rating being called rather than the average rating. This bug is currently unresolved and in order to ensure that only one entry of each product is returned to the user, the sort by rating functionality has been removed.
-</br>
+</br></br>
 
 #### Duplicate Attribute Error
-</br>
-
 The blog and product app both contain identical files titled "custom_clearable_file_input.html". This file activates the "widget.py" file which again is common to both apps (blog app displayed below). When a Superuser accesses the form to either add or edit a blog post or product, a thumbnail of the image that is being uploaded or is currently in place will be rendered.
 </br>
 
@@ -906,8 +899,6 @@ In order to fix the HTML validation error the "custom_clearable_file_input.html"
 </br>
 
 #### Duplicate ID Error
-</br>
-
 A HTML validation error of duplicate id's was returned on the bag page. This was due to the "quality-form.html" being called for both desktop and mobile views. When the page was rendered, the id that was in the "quality-form.html" and is used on the "Remove" link to remove an item from the cart was returned twice.
 </br>
 
