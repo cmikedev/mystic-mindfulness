@@ -757,8 +757,21 @@ Form error - thinks there's 2 id's but the widget replaces the old image with th
 
 
 ## 6. Bugs
+</br>
 
-### Bugs - Fixed
+### 6.1 Bugs - Fixed
+</br>
+
+#### Django-ckeditor Error code: exportpdf-no-token-url
+
+When posting a blog post, an "exportpdf-no-token-url" error was returned to the console. This related to the CKEditor plugin which is utilised in the Blog post and comment sections to use Rich Text forms.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/export-pdf-error.png?raw=true)</br>
+</br>
+
+The fix was to remove the "exportpdf" plugin from the CKEDITOR_CONFIGS in the project's settings.py file.
+</br>
 
 #### Python Bare Except Error
 
@@ -775,7 +788,19 @@ In actuality this function was already redundant as although its purpose was to 
 </br>
 
 
-### Bugs - Unfixed
+### 6.2 Bugs - Unfixed
+</br>
+
+#### Product Rating
+
+As documented above in the User Testing Section, authenticated and logged in users are able to review products. Any site visitor, authenticated or not can browse products and filter by price and category. Earlier drafts contained sort by rating functionality. If a product had more than one rating, it would display normally on the main product page. When a user sorted products according to rating, the product would duplicate (with different ratings) according to the number of ratings it had. As per the screenshot below, two users left ratings and so two instances of the product were displayed when a user sorted by rating.
+</br>
+
+![image](https://github.com/cmikedev/mystic-mindfulness/blob/main/readme_images/rating-error.png?raw=true)</br>
+</br>
+
+This appears to be due to an instance of each rating being called rather than the average rating. This bug is currently unresolved and in order to ensure that only one entry of each product is returned to the user, the sort by rating functionality has been removed.
+</br>
 
 #### Duplicate Attribute Error
 </br>
@@ -827,6 +852,7 @@ Making the class names different in each of the templates and the JavaScript fix
 </br>
 
 However, when the user hovers their cursor over the "Remove" link it changes to a "caret". This directly impacts user experience as a user would not expect the cursor to display in "caret" style unless it was placed over text. The "Remove" link works as it should but due to the impact on user experience this bug is considered unfixed.
+</br>
 
 
 
